@@ -1,20 +1,5 @@
 {
-    "name": "jularbete",
-    "version": "1.0.0",
-    "description": "",
-    "scripts": {
-      "start": "sass sass/main.scss style.css -w"
-    },
-    "repository": {
-      "type": "git",
-      "url": ""
-    },
-    "author": "",
-    "bugs": {
-    "url": "https://github.com/Nethster/Jularbete"
-    },
-    "homepage": "",
-    "dependencies": {
-      "sass": "1.43.4"
-    }
+  "dependencies": {
+    "node-sass": "^6.0.1"
   }
+}

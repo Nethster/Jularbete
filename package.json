@@ -1,7 +1,6 @@
 {
   "name": "liudmilasass",
   "version": "1.0.0",
-  "description": "",
   "main": "javascript.js",
   "dependencies": {
     "abbrev": "^1.1.1",
@@ -183,7 +182,7 @@
     "yargs-parser": "^20.2.9"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node-sass sass/main.scss styles.css"
   },
   "repository": {
     "type": "git",
@@ -194,5 +193,7 @@
   "bugs": {
     "url": "https://github.com/Nethster/Jularbete/issues"
   },
-  "homepage": "https://github.com/Nethster/Jularbete#readme"
+  "homepage": "https://github.com/Nethster/Jularbete#readme",
+  "devDependencies": {},
+  "description": ""
 }

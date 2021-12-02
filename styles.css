@@ -1,4 +1,4 @@
-* { 
+body { 
   /* your standard setting for the entire DOC */
   font-family: 'Roboto Mono', monospace; 
   margin: 0;
@@ -7,15 +7,23 @@
   box-sizing: border-box;
 } 
 
- /* This Css is rowdy AF so dont really know 
-    where to start comment it. It needs to be pushed and organized in SASS. Lots of improvements can be made. 
-    This is the work for me tmrw friday 3 / 12. */
-
-.header {
+header {
   height: 100px; 
   display: flex;
   justify-content: space-between;
-} 
+
+}
+
+.product__image {
+  height: 300px;
+  max-width: 250px;
+}
+
+main {
+  max-width: 1000px;
+}
+
+
 .logo-container {
   padding-left: 50px;
   height: 100%; 
@@ -143,4 +151,8 @@ hr {
   margin-right: auto;
   border-style: inset;
   border-width: 1px;
+}
+
+ul {
+  list-style: none;
 }

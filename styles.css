@@ -1,2 +1,146 @@
-.header__title {
-  text-transform: uppercase; }
+* { 
+  /* your standard setting for the entire DOC */
+  font-family: 'Roboto Mono', monospace; 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+} 
+
+ /* This Css is rowdy AF so dont really know 
+    where to start comment it. It needs to be pushed and organized in SASS. Lots of improvements can be made. 
+    This is the work for me tmrw friday 3 / 12. */
+
+.header {
+  height: 100px; 
+  display: flex;
+  justify-content: space-between;
+} 
+.logo-container {
+  padding-left: 50px;
+  height: 100%; 
+  width: 300px;
+} 
+.logo {
+  height: 70px;
+  width: 110px;
+  background-color: rgb(166, 187, 145);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.icon-container {
+  height: 100%; 
+  width: 450px; 
+} 
+.icon-container ul{
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+.logo-container  {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+} 
+.text-section { 
+  height: 200px;
+  display: flex; 
+  justify-content: center;
+}
+.test {
+  width: 1050px;
+  height: 200px; 
+  padding-left: 35px;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.image-section {
+  height: 287px; 
+  display: flex;
+  justify-content: space-evenly;
+}
+#heart {
+  margin: 10px;
+  float: right;
+}
+.pot-1 {
+  height: 285px; 
+  width: 265px;
+  background-image: url(images/pot-1.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+.pot-2 {
+  height: 285px; 
+  width: 265px;
+  background-image: url(images/pot-2.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position-y: center;
+} 
+.pot-3 {
+  height: 285px; 
+  width: 265px;
+  background-image: url(images/pot-3.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position-y: center;
+} 
+.pot-4 {
+  height: 285px; 
+  width: 265px;
+  background-image: url(images/pot-4.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+.pot-5 {
+  height: 285px; 
+  width: 265px;
+  background-image: url(images/pot-5.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position-y: center;
+} 
+.pot-6 {
+  height: 285px; 
+  width: 265px;
+  background-image: url(images/pot-6.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+} 
+
+
+.info-text{
+  display: flex;
+  justify-content: space-evenly;
+  height: 90px; 
+  padding-bottom: 10px;
+} 
+.text {
+  padding: 4px;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80px;
+  width: 265px;
+} 
+span {
+  display: flex;
+  justify-content: space-between;
+} 
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}

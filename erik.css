@@ -10,14 +10,14 @@
    /* This Css is rowdy AF so dont really know 
       where to start comment it. It needs to be pushed and organized in SASS. Lots of improvements can be made. 
       This is the work for me tmrw friday 3 / 12. */
-      
+
 .header {
     height: 100px; 
     display: flex;
     justify-content: space-between;
 } 
 .logo-container {
-    margin-left: 50px;
+    padding-left: 50px;
     height: 100%; 
     width: 300px;
 } 
@@ -51,7 +51,8 @@
 }
 .test {
     width: 1050px;
-    height: 200px;
+    height: 200px; 
+    padding-left: 35px;
     display: flex; 
     flex-direction: column;
     justify-content: space-evenly;

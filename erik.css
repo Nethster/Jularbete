@@ -1,11 +1,16 @@
-* {
+* { 
+    /* your standard setting for the entire DOC */
     font-family: 'Roboto Mono', monospace; 
     margin: 0;
     padding: 0;
     list-style: none;
     box-sizing: border-box;
-    /*border: solid 1px black;*/
 } 
+
+   /* This Css is rowdy AF so dont really know 
+      where to start comment it. It needs to be pushed and organized in SASS. Lots of improvements can be made. 
+      This is the work for me tmrw friday 3 / 12. */
+      
 .header {
     height: 100px; 
     display: flex;

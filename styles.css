@@ -1,10 +1,13 @@
 body { 
   /* your standard setting for the entire DOC */
-  font-family: 'Roboto Mono', monospace; 
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
   margin: 0;
   padding: 0;
   list-style: none;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 } 
 
 header {
@@ -21,37 +24,35 @@ header {
 
 main {
   max-width: 1000px;
+  align-self: center;
 }
 
 
 .logo-container {
-  padding-left: 50px;
-  height: 100%; 
-} 
-
-.logo {
-  height: 70px;
-  width: 110px;
+  margin-left: 50px;
+  padding: 10px; 
+  height: min-content;
   background-color: rgb(166, 187, 145);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
 }
+
+
 .icon-container {
-  height: 100%; 
+  height: fit-content; 
   width: 450px; 
 } 
+
 .icon-container ul{
   display: flex; 
   justify-content: space-around;
   align-items: center;
-  margin-top: 30px;
 }
-.logo-container  {
-  display: flex; 
-  align-items: center;
-  justify-content: center;
-} 
+
 .text-section { 
   height: 200px;
   display: flex; 
@@ -70,33 +71,11 @@ main {
   display: flex;
   justify-content: space-evenly;
 }
-#heart {
-  margin: 10px;
-  float: right;
-}
 
-.product-list-wrapper {
+.product-list-wrapper ul {
   display: flex;
   flex-wrap: wrap;
-}
-
-.info-text{
-  display: flex;
-  justify-content: space-evenly;
-  height: 90px; 
-  padding-bottom: 10px;
-} 
-.text {
-  padding: 4px;
-  display: flex; 
-  flex-direction: column;
-  justify-content: space-between;
-  height: 80px;
-  width: 265px;
-} 
-span {
-  display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 hr {
@@ -111,4 +90,34 @@ hr {
 
 ul {
   list-style: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.product-list-wrapper ul li {
+  position: relative;
+  margin-right: 1rem;
+}
+
+.add-to-favorites {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+
+.add-to-cart {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+}
+
+h4 {
+  font-weight: 300;
 }

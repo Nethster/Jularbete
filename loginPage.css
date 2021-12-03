@@ -1,0 +1,120 @@
+body { 
+    /* your standard setting for the entire DOC */
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }  
+  header {
+    height: 5rem; 
+    display: flex;
+    justify-content: space-between;
+  } 
+
+  main {
+      padding-top: 30px;
+  }
+  .logo-container {
+    margin-left: 50px;
+    padding: 10px; 
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+  } 
+  nav {
+    height: fit-content;
+  } 
+  
+  nav ul {
+    display: flex; 
+    justify-content: space-evenly;
+    align-content: flex-end;
+    padding: 10px;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  .login {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+  }
+  .user-name {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 20px;
+  } 
+  .user-name input {
+    border: none;
+  } 
+  .user-name label {
+      border-top: 1px solid black;
+  }
+  .user-password {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  } 
+  .user-password input {
+    border: none;
+  } 
+  .user-password label {
+    border-top: 1px solid black;
+} 
+.submit {
+    display: flex; 
+    justify-content: center; 
+}
+.submit input {
+    width: 100%; 
+    background-color: white;
+    border-radius: 20px;
+} 
+.submit input:hover {
+    color: rgb(95, 160, 135); 
+    border: 1px solid rgb(95, 160, 135);
+}
+.forgot-pass {
+    padding-top: 18px;
+} 
+.forgot-pass a { 
+    color: black;
+    font-size: large;
+} 
+.forgot-pass a:hover {
+    color: rgb(95, 160, 135); 
+    border: 1px solid rgb(95, 160, 135);
+}
+footer {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+.sign-up {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    width: 450px; 
+}
+p {
+    margin-left:15px ;
+}
+.sign-up a {
+    font-size: x-large; 
+    color: black; 
+}
+.sign-up a:hover {
+   color: rgb(95, 160, 135); 
+   border: 1px solid rgb(95, 160, 135);
+}
+hr { border: 0; clear:both; display:block; width: 96%; background-color:#101010; height: 1px; margin-top: 33px;}

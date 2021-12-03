@@ -14,6 +14,7 @@ header {
   height: 5rem; 
   display: flex;
   justify-content: space-between;
+  max-width: 100%;
 }
 
 .product__image {
@@ -24,6 +25,8 @@ header {
 main {
   max-width: 1000px;
   align-self: center;
+  align-content: center;
+  min-width: 50%;
 }
 
 
@@ -64,6 +67,7 @@ nav ul li {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  align-content: center;
 }
 
 hr {
@@ -92,6 +96,7 @@ button:hover {
 .product-list-wrapper ul li {
   position: relative;
   margin-right: 1rem;
+  align-self: center;
 }
 
 .add-to-favorites {
@@ -134,5 +139,10 @@ button:hover {
 
   .product-list-wrapper ul li {
     margin-right: 0;
+  }
+  
+  .frontpage___description {
+    max-width: 95%;
+    padding-left: 0.7rem;
   }
 }

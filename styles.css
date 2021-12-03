@@ -11,10 +11,9 @@ body {
 } 
 
 header {
-  height: 100px; 
+  height: 5rem; 
   display: flex;
   justify-content: space-between;
-
 }
 
 .product__image {
@@ -32,7 +31,6 @@ main {
   margin-left: 50px;
   padding: 10px; 
   height: min-content;
-  background-color: rgb(166, 187, 145);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -42,34 +40,24 @@ main {
 }
 
 
-.icon-container {
-  height: fit-content; 
-  width: 450px; 
+nav {
+  height: fit-content;
 } 
 
-.icon-container ul{
+nav ul {
   display: flex; 
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-evenly;
+  align-content: flex-end;
+  padding: 10px;
 }
 
-.text-section { 
-  height: 200px;
-  display: flex; 
-  justify-content: center;
+nav ul li {
+  margin-right: 20px;
 }
-.test {
-  width: 1050px;
-  height: 200px; 
-  padding-left: 35px;
-  display: flex; 
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.image-section {
-  height: 287px; 
-  display: flex;
-  justify-content: space-evenly;
+
+.frontpage___description {
+  max-width: 90%;
+  padding-left: 1rem;
 }
 
 .product-list-wrapper ul {
@@ -80,8 +68,8 @@ main {
 
 hr {
   display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   margin-left: auto;
   margin-right: auto;
   border-style: inset;
@@ -118,6 +106,33 @@ button:hover {
   right: 5%;
 }
 
-h4 {
-  font-weight: 300;
+@media (max-width: 650px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .logo-container {
+    margin-left: 0.5rem;
+    padding: 0;
+  }
+
+  nav ul {
+    padding: 0.3rem;
+  }
+
+  nav ul li {
+    margin-right: 0.5rem;
+    max-height: 20px;
+  }
+  nav ul li:nth-last-child() {
+    margin-right: 0;
+  }
+
+  .product-list-wrapper ul li {
+    margin-right: 0;
+  }
 }

@@ -4,14 +4,20 @@
 
 body {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
 	margin: 0;
+	transition-duration: 0.3s;
 }
 
 body.dark {
 	background-color: #292c35;
+}
+
+body.dark p {
+	color: #fff;
 }
 
 .checkbox {
@@ -32,6 +38,7 @@ body.dark {
 	height: 30px;
 	width: 45px;
 	border-radius: 60px;
+	transform: scale(1.3);
 }
 
 .ball {

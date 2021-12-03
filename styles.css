@@ -74,56 +74,11 @@ main {
   margin: 10px;
   float: right;
 }
-.pot-1 {
-  height: 285px; 
-  width: 265px;
-  background-image: url(images/pot-1.jpg);
-  background-size: cover; 
-  background-repeat: no-repeat;
-  background-position-y: center;
-}
-.pot-2 {
-  height: 285px; 
-  width: 265px;
-  background-image: url(images/pot-2.jpg);
-  background-size: cover; 
-  background-repeat: no-repeat;
-  background-position-y: center;
-} 
-.pot-3 {
-  height: 285px; 
-  width: 265px;
-  background-image: url(images/pot-3.jpg);
-  background-size: cover; 
-  background-repeat: no-repeat;
-  background-position-y: center;
-} 
-.pot-4 {
-  height: 285px; 
-  width: 265px;
-  background-image: url(images/pot-4.jpg);
-  background-size: cover; 
-  background-repeat: no-repeat;
-  background-position-y: center;
-}
-.pot-5 {
-  height: 285px; 
-  width: 265px;
-  background-image: url(images/pot-5.jpg);
-  background-size: cover; 
-  background-repeat: no-repeat;
-  background-position-y: center;
-} 
-.pot-6 {
-  height: 285px; 
-  width: 265px;
-  background-image: url(images/pot-6.jpg);
-  background-size: cover; 
-  background-repeat: no-repeat;
-  background-position-y: center;
-  background-position-x: center;
-} 
 
+.product-list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .info-text{
   display: flex;
@@ -142,7 +97,8 @@ main {
 span {
   display: flex;
   justify-content: space-between;
-} 
+}
+
 hr {
   display: block;
   margin-top: 0.5em;

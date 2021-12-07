@@ -74,28 +74,41 @@
 		</main>
 		<hr />
 		<footer>
-			<div class="sign-up" id="signUp-Modal">
+				<div class="sign-up" id="signUp-Modal">
 				<h1>Not a member?</h1>
 				<h3>Join the flower power comunity today!</h3>
 				<p>
 					Dont miss out on tons of <b>perks</b>,<br />
 					such as <b>discounts</b>, <b>personalized</b> offers and much more!
 				</p>
-				<a href="#" class="signBtn">Sign up today!</a>
+		
 			</div>
-			<div class="signupModal">
-				<div class="modalContent">
-					<span class="close">&times;</span>
-					<form>
-						<label for="username">Username:</label><br />
-						<input type="text" id="username" name="username" /><br />
-						<label for="pwd">Password:</label><br />
-						<input type="password" id="pwd" name="pwd" />
-						<label for="email">Email</label>
-						<input type="text" id="email" placeholder="ragnarsfisk@xxx.se" />
-					</form>
-				</div>
-			</div>
+			<button id="modalBtn" class="button">Sign up Today</button>
+
+
+
+        <div id="signUpModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="closeBtn">&times;</span>
+                    <h2>Modal Header</h2>
+                </div>
+              <div class="modal-body">
+				  <span>Username</span>
+				<input type="text" name="" id="userID" placeholder="Username">
+				<span>Password</span>
+				<input type="password" id="passwordID" placeholder="Password">
+				<span>Email</span>
+				<input type="email" id="emailID" placeholder="ragnarsfisk88@gbg.se">
+				<button class="submitInfo">Submit</button>
+
+              </div>
+              <div class="modal-footer">
+                  <h3>Modal Footer</h3>
+              </div>
+                
+            </div>
+        </div
 		</footer>
 	</body>
 </html>

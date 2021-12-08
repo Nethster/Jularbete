@@ -33,3 +33,16 @@ function clickOutside(e) {
 		modal.style.display = "none";
 	}
 }
+
+//Localstorage
+
+function saveData() {
+	let user, psw, email;
+	user = document.querySelector("#userID").value;
+	psw = document.querySelector("#passwordID").value;
+	email = document.querySelector("#emailID").value;
+
+	localStorage.setItem("username", user);
+	localStorage.setItem("password", psw);
+	localStorage.setItem("email", email);
+}

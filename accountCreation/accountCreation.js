@@ -42,16 +42,31 @@ function saveData() {
 	psw = document.querySelector("#passwordID").value;
 	email = document.querySelector("#emailID").value;
 
-	let userRecords = new Array();
-	userRecords = JSON.parse(localStorage.getItem("users"))
+	let memberRecords = new Array();
+	memberRecords = JSON.parse(localStorage.getItem("users"))
 		? JSON.parse(localStorage.getItem("user"))
 		: [];
-	userRecords.push({
+		if(memberRecords.some((x)=>{return x.email==email}))
+		{
+			alert("Email already in use")
+		}
+		else {
+
+
+			memberRecords.push({
+				username: user,
+				password: psw,
+				email: email,
+			});
+			localStorage.setItem("users", JSON.stringify(memberRecords));
+		}
+
+	memberRecords.push({
 		username: user,
 		password: psw,
 		email: email,
 	});
-	localStorage.setItem("users", JSON.stringify(userRecords));
+	localStorage.setItem("users", JSON.stringify(memberRecords));
 
 
 	/* 

@@ -42,7 +42,20 @@ function saveData() {
 	psw = document.querySelector("#passwordID").value;
 	email = document.querySelector("#emailID").value;
 
+	let userRecords = new Array();
+	userRecords = JSON.parse(localStorage.getItem("users"))
+		? JSON.parse(localStorage.getItem("user"))
+		: [];
+	userRecords.push({
+		username: user,
+		password: psw,
+		email: email,
+	});
+	localStorage.setItem("users", JSON.stringify(userRecords));
+
+
+	/* 
 	localStorage.setItem("username", user);
 	localStorage.setItem("password", psw);
-	localStorage.setItem("email", email);
+	localStorage.setItem("email", email); */
 }

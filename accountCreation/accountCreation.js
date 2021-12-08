@@ -44,7 +44,6 @@ function saveData() {
 
 	let memberRecords = new Array();
 
-
 	memberRecords = JSON.parse(localStorage.getItem("users"))
 		? JSON.parse(localStorage.getItem("users"))
 		: [];
@@ -54,6 +53,12 @@ function saveData() {
 		})
 	) {
 		alert("Email already in use");
+	} else if (
+		memberRecords.some((z) => {
+			return z.username == user;
+		})
+	) {
+		alert("Username already in use");
 	} else {
 		memberRecords.push({
 			username: user,

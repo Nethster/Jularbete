@@ -1,1 +1,7 @@
 @import "./front-page.scss";
+@import "./login-page.scss";
+
+.light {@include main($color-light, $background-color-light)}
+.dark {@include main($color-dark, $background-color-dark)}
+.light {@include login($color-light, $background-color-light)}
+.dark {@include login($color-dark, $background-color-dark)}

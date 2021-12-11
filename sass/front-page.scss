@@ -39,7 +39,6 @@ $background-color-dark: #000000;
     max-width: 1000px;
     align-self: center;
     align-content: center;
-    min-width: 50%;
   }
   
   
@@ -166,5 +165,3 @@ $background-color-dark: #000000;
   }
 }
 
-.light {@include main($color-light, $background-color-light)}
-.dark {@include main($color-dark, $background-color-dark)}

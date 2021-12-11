@@ -28,8 +28,7 @@
 .light main {
   max-width: 1000px;
   align-self: center;
-  align-content: center;
-  min-width: 50%; }
+  align-content: center; }
 
 .light .logo-container {
   margin-left: 50px;
@@ -152,8 +151,7 @@
 .dark main {
   max-width: 1000px;
   align-self: center;
-  align-content: center;
-  min-width: 50%; }
+  align-content: center; }
 
 .dark .logo-container {
   margin-left: 50px;

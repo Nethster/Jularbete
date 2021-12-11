@@ -6,6 +6,7 @@
 		"node-sass": "^6.0.1"
 	},
 	"scripts": {
+		"watch": "node-sass sass/main.scss styles.css -w",
 		"test": "node-sass sass/main.scss styles.css"
 	},
 	"repository": {

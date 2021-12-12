@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,25 +7,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Flower Power! "Look at all these mother*ucking flower pots" - Erik</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <img src="images/wishlist.svg" alt="Flower Power"/><h1>Flower Power</h1>
+            <span class="material-icons">&#xe3e3;</span><h1>Flower Power</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="#" title="My Account"><img src="images/account_icon.svg" alt="My Account"/></a></li>
-                <li><a href="#" title="Wishlist"><img src="images/shopping_cart.svg" alt="Wishlist"/></a></li>
-                <li><a href="#" title="Shopping Cart"><img src="images/favorite_border_black_24dp.svg" alt="Shopping Cart"/></a></li>
-                <li><button title="Dark/Light Mode"><img src="images/dark_mode.svg" alt="Dark/Light Mode"/></button></li>
+                <li><a href="/login-page.html" title="My Account"><span class="material-icons">&#xe853;</span></a></li>
+                <li><a href="#" title="Wishlist"><span class="material-icons">&#xe87d;</span></a></li>
+                <li><a href="#" title="Shopping Cart"><span class="material-icons">&#xe8cc;</span></a></li>
+                <li><button title="Dark/Light Mode" onclick="themeSwitcher()"><span class="material-icons">&#xe51c;</span></button></li>
             </ul>
         </nav>
-    </header>
-
-    <hr>   <!--Horizontal line for seperation-->
+    </header>  <!--Horizontal line for seperation-->
 
     <main>
         <section class="frontpage___description">
@@ -45,7 +44,7 @@
                     <img src="images/favorite_border_black_24dp.svg" alt="">
                 </button>
                 <button class="add-to-cart" title="Add to Shopping Cart">
-                    <img src="images/add_to_cart.svg" alt="">
+                    <span class="material-icons">&#xe148;</span>
                 </button>
             </li>
             <li>
@@ -56,7 +55,7 @@
                     <img src="images/favorite_border_black_24dp.svg" alt="">
                 </button>
                 <button class="add-to-cart" title="Add to Shopping Cart">
-                    <img src="images/add_to_cart.svg" alt="">
+                    <span class="material-icons">&#xe148;</span>
                 </button>
             </li>
             <li>
@@ -67,7 +66,7 @@
                     <img src="images/favorite_border_black_24dp.svg" alt="">
                 </button>
                 <button class="add-to-cart" title="Add to Shopping Cart">
-                    <img src="images/add_to_cart.svg" alt="">
+                    <span class="material-icons">&#xe148;</span>
                 </button>
             </li>
             <li>
@@ -78,7 +77,7 @@
                     <img src="images/favorite_border_black_24dp.svg" alt="">
                 </button>
                 <button class="add-to-cart" title="Add to Shopping Cart">
-                    <img src="images/add_to_cart.svg" alt="">
+                    <span class="material-icons">&#xe148;</span>
                 </button>
             </li>
             <li>
@@ -89,7 +88,7 @@
                     <img src="images/favorite_border_black_24dp.svg" alt="">
                 </button>
                 <button class="add-to-cart" title="Add to Shopping Cart">
-                    <img src="images/add_to_cart.svg" alt="">
+                    <span class="material-icons">&#xe148;</span>
                 </button>
             </li>
             <li>
@@ -100,13 +99,23 @@
                     <img src="images/favorite_border_black_24dp.svg" alt="">
                 </button>
                 <button class="add-to-cart" title="Add to Shopping Cart">
-                    <img src="images/add_to_cart.svg" alt="">
+                    <span class="material-icons">&#xe148;</span>
                 </button>
             </li>
         </ul>
     </div>
+    <section class="get-inspired-wrapper">
+        <h3>Looking for inspiration?</h3>
+        <button class="get-inspired-button" onclick="addImage()">
+            Get Inspired!
+        </button>
+        <div class="unsplash-image-wrapper">
+            <img class="unsplash-image hidden-image"/>
+        </div>
+    </section>
     </main>
     <footer></footer>
-    <script src="/javascript.js"></script>
+    <script src="/javascript/javascript.js"></script>
+    <script src="/javascript/unsplash-photos.js"></script>
 </body>
 </html>

@@ -34,7 +34,7 @@ function clickOutside(e) {
 	}
 }
 
-//Localstorage
+//Localstorage for member registration
 
 function saveData() {
 	let user, psw, email;

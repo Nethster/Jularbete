@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="/styles.css">
+		<title>My account</title>
+	</head>
+	<body>
+		<header>
+			<div class="logo-container">
+				<span class="material-icons">&#xe3e3;</span><h1>Flower Power</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#" title="My Account"><span class="material-icons">&#xe853;</span></a></li>
+					<li><a href="#" title="Wishlist"><span class="material-icons">&#xe87d;</span></a></li>
+					<li><a href="#" title="Shopping Cart"><span class="material-icons">&#xe8cc;</span></a></li>
+					<li><button title="Dark/Light Mode" onclick="themeSwitcher()"><span class="material-icons">&#xe51c;</span></button></li>
+				</ul>
+			</nav>
+		</header>
+
+		<hr />
+		<!--Horizontal line for separation-->
+
+		<main>
+			<div class="login">
+				<h2>Welcome fellow florist!</h2>
+				<form method="POST">
+					<div class="user-name">
+						<input type="text" required />
+						<label>Username</label>
+					</div>
+					<div class="user-password">
+						<input type="password" required />
+						<label>Password</label>
+					</div>
+					<div class="submit">
+						<input type="submit" value="Login" />
+					</div>
+					<div class="forgot-pass">
+						<a href="#">Forgot password?</a>
+					</div>
+				</form>
+			</div>
+		</main>
+		<hr />
+		<footer>
+				<div class="sign-up" id="signUp-Modal">
+				<h1>Not a member?</h1>
+				<h3>Join the flower power comunity today!</h3>
+				<p>
+					Dont miss out on tons of <b>perks</b>,<br />
+					such as <b>discounts</b>, <b>personalized</b> offers and much more!
+				</p>
+		
+			</div>
+			<button id="modalBtn" class="button">Sign up Today</button>
+
+
+
+        <div id="signUpModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="closeBtn">&times;</span>
+                    <h2>Member Signup</h2>
+                </div>
+              <div class="modal-body">
+				  <form>
+				  <span>Username</span>
+				<input type="text" name="" id="userID" placeholder="Username">
+				<span>Password</span>
+				<input type="password" id="passwordID" placeholder="Password">
+				<span>Email</span>
+				<input type="email" id="emailID" placeholder="ragnarsfisk88@gbg.se">
+				<button type="button" onclick="saveData()" class="submitInfo">Submit</button>
+			</form>
+
+              </div>
+              <div class="modal-footer">
+                  <h3>Welcome to Flower Power</h3>
+              </div>
+                
+            </div>
+        </div>
+		</footer>
+		<script src="./javascript/account-creation.js" defer></script>
+		<script src="./javascript/javascript.js"></script>
+	</body>
+</html>

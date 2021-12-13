@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Flower Power! "Look at all these mother*ucking flower pots" - Erik</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <span class="material-icons">&#xe3e3;</span><h1>Flower Power</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/login-page.html" title="My Account"><span class="material-icons">&#xe853;</span></a></li>
+                <li><a href="#" title="Wishlist"><span class="material-icons">&#xe87d;</span></a></li>
+                <li><a href="#" title="Shopping Cart"><span class="material-icons">&#xe8cc;</span></a></li>
+                <li><button title="Dark/Light Mode" onclick="themeSwitcher()"><span class="material-icons">&#xe51c;</span></button></li>
+            </ul>
+        </nav>
+    </header>  <!--Horizontal line for seperation-->
+
+    <main>
+        <section class="frontpage___description">
+            <h2>Outdoor plant pots</h2>
+            <p>When the sun comes out, so should your garden pots! Welcome the warmer weather with colourful plants and plant pots for your front porch, balcony or garden.</p>
+            <div class="item__counter">
+                12 items
+            </div>    
+        </section>
+        <div class="product-list-wrapper">
+        <ul>
+            <li>
+                <img src="images/pot-1.jpg" class="product__image" alt="">
+                <h3>White pot 1</h3>
+                <h4>30 SEK</h4>
+                <button class="add-to-favorites" title="Add to favorites">
+                    <img src="images/favorite_border_black_24dp.svg" alt="">
+                </button>
+                <button class="add-to-cart" title="Add to Shopping Cart">
+                    <span class="material-icons">&#xe148;</span>
+                </button>
+            </li>
+            <li>
+                <img src="images/pot-2.jpg" class="product__image" alt="">
+                <h3>White pot 2</h3>
+                <h4>30 SEK</h4>
+                <button class="add-to-favorites" title="Add to favorites">
+                    <img src="images/favorite_border_black_24dp.svg" alt="">
+                </button>
+                <button class="add-to-cart" title="Add to Shopping Cart">
+                    <span class="material-icons">&#xe148;</span>
+                </button>
+            </li>
+            <li>
+                <img src="images/pot-3.jpg" class="product__image" alt="">
+                <h3>White pot 3</h3>
+                <h4>30 SEK</h4>
+                <button class="add-to-favorites" title="Add to favorites">
+                    <img src="images/favorite_border_black_24dp.svg" alt="">
+                </button>
+                <button class="add-to-cart" title="Add to Shopping Cart">
+                    <span class="material-icons">&#xe148;</span>
+                </button>
+            </li>
+            <li>
+                <img src="images/pot-4.jpg" class="product__image" alt="">
+                <h3>Green pot</h3>
+                <h4>30 SEK</h4>
+                <button class="add-to-favorites" title="Add to favorites">
+                    <img src="images/favorite_border_black_24dp.svg" alt="">
+                </button>
+                <button class="add-to-cart" title="Add to Shopping Cart">
+                    <span class="material-icons">&#xe148;</span>
+                </button>
+            </li>
+            <li>
+                <img src="images/pot-5.jpg" class="product__image" alt="">
+                <h3>Black pot</h3>
+                <h4>30 SEK</h4>
+                <button class="add-to-favorites" title="Add to favorites">
+                    <img src="images/favorite_border_black_24dp.svg" alt="">
+                </button>
+                <button class="add-to-cart" title="Add to Shopping Cart">
+                    <span class="material-icons">&#xe148;</span>
+                </button>
+            </li>
+            <li>
+                <img src="images/pot-6.jpg" class="product__image" alt="">
+                <h3>Gray pot</h3>
+                <h4>30 SEK</h4>
+                <button class="add-to-favorites" title="Add to favorites">
+                    <img src="images/favorite_border_black_24dp.svg" alt="">
+                </button>
+                <button class="add-to-cart" title="Add to Shopping Cart">
+                    <span class="material-icons">&#xe148;</span>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <section class="get-inspired-wrapper">
+        <h3>Looking for inspiration?</h3>
+        <button class="get-inspired-button" onclick="addImage()">
+            Get Inspired!
+        </button>
+        <div class="unsplash-image-wrapper">
+            <img class="unsplash-image hidden-image"/>
+        </div>
+    </section>
+    </main>
+    <footer></footer>
+    <script src="/javascript/javascript.js"></script>
+    <script src="/javascript/unsplash-photos.js"></script>
+</body>
+</html>

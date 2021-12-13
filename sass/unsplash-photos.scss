@@ -1,0 +1,28 @@
+@mixin unsplash-feature($foreground, $background) {
+    .get-inspired-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .get-inspired-button {
+        color: $foreground;
+        border: 2px solid $foreground;
+        font-family: 'Roboto Mono', monospace;
+        padding: 0.5rem 1rem;
+    }
+
+    .unsplash-image-wrapper {
+        padding: 1rem;
+    }
+
+    .unsplash-image {
+        max-width: 95%; 
+        max-height: 350px; 
+        border: 2px solid $foreground;
+    }
+
+    .hidden-image {
+        display: none;
+    }
+}

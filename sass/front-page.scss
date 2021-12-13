@@ -25,8 +25,8 @@ $background-color-dark: #292c35;
 		background-color: #292c35;
 	}
 
-	body.dark p {
-		color: #fff;
+	body.dark {
+		color: $color-dark;
 	}
 
 	.checkbox {

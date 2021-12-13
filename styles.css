@@ -16,8 +16,8 @@
     background-color: #ffffff; }
   .light body.dark {
     background-color: #292c35; }
-  .light body.dark p {
-    color: #fff; }
+  .light body.dark {
+    color: #ffffff; }
   .light .checkbox {
     opacity: 0;
     position: absolute; }
@@ -156,8 +156,8 @@
     background-color: #292c35; }
   .dark body.dark {
     background-color: #292c35; }
-  .dark body.dark p {
-    color: #fff; }
+  .dark body.dark {
+    color: #ffffff; }
   .dark .checkbox {
     opacity: 0;
     position: absolute; }

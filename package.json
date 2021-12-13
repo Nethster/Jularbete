@@ -1,23 +1,23 @@
 {
-	"name": "liudmilasass",
-	"version": "1.0.0",
-	"main": "javascript.js",
-	"dependencies": {
-		"node-sass": "^6.0.1"
-	},
-	"scripts": {
-		"watch": "node-sass sass/main.scss styles.css -w -r",
-		"test": "node-sass sass/main.scss styles.css"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Nethster/Jularbete.git"
-	},
-	"author": "",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/Nethster/Jularbete/issues"
-	},
-	"homepage": "https://github.com/Nethster/Jularbete#readme",
-	"description": ""
+  "name": "liudmilasass",
+  "version": "1.0.0",
+  "main": "javascript.js",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "scripts": {
+    "watch": "node-sass sass/main.scss styles.css -w -r",
+    "test": "node-sass sass/main.scss styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nethster/Jularbete.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nethster/Jularbete/issues"
+  },
+  "homepage": "https://github.com/Nethster/Jularbete#readme",
+  "description": ""
 }

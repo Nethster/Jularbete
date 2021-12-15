@@ -6,7 +6,7 @@ function renderProducts() {
     
     let savedList = loadProducts()
 
-    if (productList !== null) {
+    if (savedList !== null) {
         productList = savedList
     }
     
@@ -14,15 +14,15 @@ function renderProducts() {
 
     listString += `
     <li>
-        <img src="images/pot-1.jpg" class="product__image" alt="">
-        <h3>${product.name}</h3>
-        <h4>${product.price} SEK</h4>
-        <button class="add-to-favorites" title="Add to favorites">
-        <img src="images/favorite_border_black_24dp.svg" alt="">
-        </button>
-        <button class="add-to-cart" title="Add to Shopping Cart">
-        <img src="images/add_to_cart.svg" alt="">
-        </button>
+            <img src="images/pot-1.jpg" class="product__image" alt="">
+            <h3>White pot 1</h3>
+            <h4>30 SEK</h4>
+            <button class="add-to-favorites" title="Add to favorites">
+                <img src="images/favorite_border_black_24dp.svg" alt="">
+            </button>
+            <button class="add-to-cart" title="Add to Shopping Cart">
+                <span class="material-icons">&#xe148;</span>
+            </button>
     </li> 
     `
     })
@@ -36,7 +36,7 @@ function addProduct() {
     const price = document.querySelector("#price").value
     const img = "trorlladsada"
     
-    const newItem = {
+      let newItem = {
         name,
         price,
         img,
@@ -57,4 +57,3 @@ function loadProducts() {
     return null
 } 
 
-renderProducts() 

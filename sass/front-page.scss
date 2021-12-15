@@ -82,6 +82,10 @@ $background-color-dark: #292c35;
 		padding-right: 1rem;
 	}
 
+	a:link, a:visited {
+		color: $foreground;
+	}
+
 	.product__image {
 		height: 300px;
 		max-width: 250px;
@@ -220,7 +224,7 @@ $background-color-dark: #292c35;
 			margin-right: 0;
 		}
 
-		.product-list-wrapper ul li {
+		.created-products-container ul li {
 			margin-right: 0;
 		}
 

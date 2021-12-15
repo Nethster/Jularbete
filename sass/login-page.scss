@@ -1,4 +1,5 @@
 @mixin login($foreground, $background) {
+
 	.login {
 		display: flex;
 		flex-direction: column;
@@ -59,7 +60,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		width: 450px;
+		width: 400px;
 	}
 
 	.sign-up a {
@@ -156,4 +157,11 @@
 			opacity: 1;
 		}
 	}
+
+	@media (max-width: 650px) {
+		.sign-up p {
+			width: 350px;
+		}
+	}
+
 }

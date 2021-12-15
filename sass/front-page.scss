@@ -10,6 +10,7 @@ $background-color-dark: #292c35;
 		font-family: "Roboto Mono", monospace;
 		font-size: 16px;
 		margin: 0;
+		margin-left: 0;
 		padding: 0;
 		list-style: none;
 		box-sizing: border-box;
@@ -200,7 +201,8 @@ $background-color-dark: #292c35;
 		flex-direction: column;
 		align-items: center;
 		h3 {
-			margin-left: 1rem;
+			margin: 0;
+			padding: 0.5rem;
 		}
 		
 	}
@@ -212,6 +214,7 @@ $background-color-dark: #292c35;
 		justify-content: space-around;
 		
 		ul {
+			padding: 0;
 			margin-right: 30px;
 			text-align: center;
 			li {
@@ -222,11 +225,12 @@ $background-color-dark: #292c35;
 
 	.payment-icons {
 		display: flex;
+		padding: 0;
 	}
 
 	.payment-icon {
 		max-height: 30px;
-		margin: 0 1rem;
+		margin: 0;
 		padding: 0.5rem;
 	}
 

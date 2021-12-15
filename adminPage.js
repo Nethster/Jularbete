@@ -1,4 +1,4 @@
-const productEl = document.querySelector(".product-list-wrapper"); 
+const productEl = document.querySelector(".created-products-container"); 
 
 function renderProducts() {
 

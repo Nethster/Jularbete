@@ -193,10 +193,15 @@ $background-color-dark: #292c35;
 		right: 5%;
 	}
 
+// styling for footer
+
 	footer {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		h3 {
+			margin-left: 1rem;
+		}
 		
 	}
 
@@ -209,17 +214,20 @@ $background-color-dark: #292c35;
 		ul {
 			margin-right: 30px;
 			text-align: center;
+			li {
+				line-height: 1.2;
+			}
 		}
 	}
 
 	.payment-icons {
 		display: flex;
-		
 	}
 
 	.payment-icon {
 		max-height: 30px;
 		margin: 0 1rem;
+		padding: 0.5rem;
 	}
 
 	.material-icons {

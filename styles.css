@@ -130,6 +130,8 @@
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .light footer h3 {
+      margin-left: 1rem; }
   .light .footer-list-wrapper {
     display: flex;
     flex-direction: row;
@@ -138,11 +140,14 @@
     .light .footer-list-wrapper ul {
       margin-right: 30px;
       text-align: center; }
+      .light .footer-list-wrapper ul li {
+        line-height: 1.2; }
   .light .payment-icons {
     display: flex; }
   .light .payment-icon {
     max-height: 30px;
-    margin: 0 1rem; }
+    margin: 0 1rem;
+    padding: 0.5rem; }
   .light .material-icons {
     font-size: 36px;
     color: #000000; }
@@ -307,6 +312,8 @@
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .dark footer h3 {
+      margin-left: 1rem; }
   .dark .footer-list-wrapper {
     display: flex;
     flex-direction: row;
@@ -315,11 +322,14 @@
     .dark .footer-list-wrapper ul {
       margin-right: 30px;
       text-align: center; }
+      .dark .footer-list-wrapper ul li {
+        line-height: 1.2; }
   .dark .payment-icons {
     display: flex; }
   .dark .payment-icon {
     max-height: 30px;
-    margin: 0 1rem; }
+    margin: 0 1rem;
+    padding: 0.5rem; }
   .dark .material-icons {
     font-size: 36px;
     color: #ffffff; }

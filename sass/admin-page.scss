@@ -1,5 +1,7 @@
+@mixin admin-page($foreground, $background) {
 .adminPage-container { 
     display: flex;
     justify-content: center;  
-    border: solid, 1px, black; 
+    border: solid, 1px, black;
 } 
+}

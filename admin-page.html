@@ -10,8 +10,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Flower Power! "Look at all these mother*ucking flower pots" - Erik</title>
     <link rel="stylesheet" href="/styles.css">
-    <script src="/javascript/products-database.js" defer></script>
-    <script src="/javascript/adminPage.js" defer></script>
 </head>
 <body>
     <header>
@@ -24,7 +22,14 @@
                 <li><a href="/login-page.html" title="My Account"><span class="material-icons">&#xe853;</span></a></li>
                 <li><a href="#" title="Wishlist"><span class="material-icons">&#xe87d;</span></a></li>
                 <li><a href="/Shopping Cart/store.html" title="Shopping Cart"><span class="material-icons">&#xe8cc;</span></a></li>
-                <li><button title="Dark/Light Mode" onclick="themeSwitcher()"><span class="material-icons">&#xe51c;</span></button></li>
+                <li><div>
+                    <input type="checkbox" class="checkbox" id="chk" />
+                    <label class="label" for="chk">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball"></div>
+                    </label>
+                </div></li>
             </ul>
         </nav>
     </header>  <!--Horizontal line for seperation-->
@@ -39,5 +44,9 @@
             </span>
         </div>
     </main>
+    <script	src="https://kit.fontawesome.com/75466a2173.js" crossorigin="anonymous" defer></script>
+    <script src="/javascript/products-database.js" defer></script>
+    <script src="/javascript/adminPage.js" defer></script>
+    <script src="/javascript/javascript.js"></script>
 </body> 
 </html>

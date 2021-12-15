@@ -9,3 +9,5 @@
 .dark {@include login($color-dark, $background-color-dark)};
 .light {@include unsplash-feature($color-light, $background-color-light)};
 .dark {@include unsplash-feature($color-dark, $background-color-dark)};
+.light {@include admin-page($color-light, $background-color-light)};
+.dark {@include admin-page($color-dark, $background-color-dark)};

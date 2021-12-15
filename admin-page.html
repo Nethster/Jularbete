@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Flower Power! "Look at all these mother*ucking flower pots" - Erik</title>
     <link rel="stylesheet" href="/styles.css">
-    <script src="/products-database.js" defer></script>
-    <script src="/adminPage.js" defer></script>
+    <script src="/javascript/products-database.js" defer></script>
+    <script src="/javascript/adminPage.js" defer></script>
 </head>
 <body>
     <header>
@@ -31,7 +31,7 @@
     <hr> 
     <main>
         <div class="adminPage-container">
-            <input type="file" id="chooseFile"> 
+            <input class="inputFile" type="file" id="chooseFile"> 
             <input type="text" id="name"> 
             <input type="number" id="price"> 
             <button onclick="addProduct()">Add item</button>

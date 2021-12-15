@@ -1,4 +1,9 @@
 /* color variables for the dark/light modes*/
+.adminPage-container {
+  display: flex;
+  justify-content: center;
+  border: solid, 1px, black; }
+
 .light {
   /*darktheme styling */ }
   .light body {

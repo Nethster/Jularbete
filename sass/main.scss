@@ -1,6 +1,7 @@
 @import "./front-page.scss";
 @import "./login-page.scss";
 @import "./unsplash-photos.scss";
+@import "./admin-page.scss";
 
 .light {@include main($color-light, $background-color-light)};
 .dark {@include main($color-dark, $background-color-dark)};

@@ -32,10 +32,9 @@ function renderProducts() {
 } 
 
 function addProduct() {
-    const name = document.querySelector("#name").value
-    const price = document.querySelector("#price").value
-    const img = document.querySelector("#chooseFile").value
-    
+    const name = document.querySelector("#name").value;
+    const price = document.querySelector("#price").value;
+    const img = document.querySelector("#chooseFile").files[0].name;
       let newItem = {
         name,
         price,

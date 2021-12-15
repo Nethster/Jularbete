@@ -88,6 +88,15 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: center; }
+  .light .created-products-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center; }
+  .light .created-products-container ul li {
+    position: relative;
+    margin-right: 1rem;
+    align-self: center; }
   .light hr {
     display: block;
     margin-top: 0.5rem;
@@ -228,6 +237,15 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: center; }
+  .dark .created-products-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center; }
+  .dark .created-products-container ul li {
+    position: relative;
+    margin-right: 1rem;
+    align-self: center; }
   .dark hr {
     display: block;
     margin-top: 0.5rem;

@@ -131,6 +131,22 @@ $background-color-dark: #292c35;
 		justify-content: flex-start;
 		align-content: center;
 	}
+	
+	// ----- Css for the added items ----- 
+	.created-products-container ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-content: center;
+	}
+
+	.created-products-container ul li {
+		position: relative;
+		margin-right: 1rem;
+		align-self: center;
+	}
+
+	// ------ css for the added items ended ----
 
 	hr {
 		display: block;

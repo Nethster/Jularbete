@@ -196,15 +196,30 @@ $background-color-dark: #292c35;
 	footer {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+		
 	}
 
 	.footer-list-wrapper {
-		display: flex!important;
+		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		
+		ul {
+			margin-right: 30px;
+			text-align: center;
+		}
+	}
+
+	.payment-icons {
+		display: flex;
+		
 	}
 
 	.payment-icon {
 		max-height: 30px;
+		margin: 0 1rem;
 	}
 
 	.material-icons {
@@ -245,6 +260,22 @@ $background-color-dark: #292c35;
 		.frontpage___description {
 			max-width: 95%;
 			padding-left: 0.7rem;
+		}
+
+		.footer-list-wrapper {
+			flex-direction: column;
+			ul{
+				margin-right: 0;
+			}
+		}
+
+		.payment-icons {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.payment-icon {
+			margin-right: 0;
 		}
 	}
 }

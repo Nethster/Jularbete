@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Flower Power! "Look at all these mother*ucking flower pots" - Erik</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/products-database.js" defer></script>
+    <script src="/adminPage.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <span class="material-icons">&#xe3e3;</span><h1>Flower Power</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/adminPage.html" title="Admin"><span class="material-icons">&#xef3d;</span></a></li>
+                <li><a href="/login-page.html" title="My Account"><span class="material-icons">&#xe853;</span></a></li>
+                <li><a href="#" title="Wishlist"><span class="material-icons">&#xe87d;</span></a></li>
+                <li><a href="/Shopping Cart/store.html" title="Shopping Cart"><span class="material-icons">&#xe8cc;</span></a></li>
+                <li><button title="Dark/Light Mode" onclick="themeSwitcher()"><span class="material-icons">&#xe51c;</span></button></li>
+            </ul>
+        </nav>
+    </header>  <!--Horizontal line for seperation-->
+    <hr> 
+    <main>
+        <div class="adminPage-container">
+            <input type="file" id="chooseFile"> 
+            <input type="text" id="name"> 
+            <input type="number" id="price"> 
+            <button onclick="addProduct()">Add item</button>
+            <span>   
+            </span>
+        </div>
+    </main>
+</body> 
+</html>

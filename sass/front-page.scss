@@ -193,6 +193,20 @@ $background-color-dark: #292c35;
 		right: 5%;
 	}
 
+	footer {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer-list-wrapper {
+		display: flex!important;
+		flex-direction: row;
+	}
+
+	.payment-icon {
+		max-height: 30px;
+	}
+
 	.material-icons {
 		font-size: 36px;
 		color: $foreground;

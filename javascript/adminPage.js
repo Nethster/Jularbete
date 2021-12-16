@@ -14,7 +14,7 @@ function renderProducts() {
 
     listString += `
     <li>
-            <img src=${product.img} class="product__image" alt="">
+            <img src=./images/${product.img} class="product__image" alt="">
             <h3>${product.name}</h3>
             <h4>${product.price} SEK</h4>
             <button class="add-to-favorites" title="Add to favorites">

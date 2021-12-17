@@ -121,15 +121,15 @@
     </div>
     <section class="get-inspired-wrapper">
         <h3>Looking for inspiration?</h3>
-        <button class="get-inspired-button" onclick="addImage()">
+        <button class="get-inspired-button" onclick="addImage(), newQuote()">
             Get Inspired!
         </button>
         <div class="unsplash-image-wrapper">
+            <!--the image fetched from API will be shown here-->
             <img class="unsplash-image hidden-image"/>
         </div>
         <div class="quote-wrapper">
             <p class="random-quote"></p>
-            <h5 class="random-author"></h5>
         </div>
     </section>
     </main>
@@ -146,6 +146,7 @@
             <ul>
                 <li><a href="">F.A.Q.</a></li>
                 <li><a href="">Got suggestions?</a></li>
+                <li><a href="">Beep Boop</a></li>
                 <li><a href="">Home</a></li>
             </ul>
         </div>

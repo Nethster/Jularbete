@@ -39,3 +39,4 @@ toggle.addEventListener("change", () => {
 		console.log(darkMode);
 	}
 });
+

@@ -639,6 +639,16 @@
 .light .hidden-image {
   display: none; }
 
+.light .quote-wrapper {
+  max-width: 500px; }
+
+.light .random-quote {
+  text-align: center; }
+
+@media (max-width: 600px) {
+  .light .quote-wrapper {
+    max-width: 90%; } }
+
 .dark .get-inspired-wrapper {
   display: flex;
   flex-direction: column;
@@ -660,6 +670,16 @@
 
 .dark .hidden-image {
   display: none; }
+
+.dark .quote-wrapper {
+  max-width: 500px; }
+
+.dark .random-quote {
+  text-align: center; }
+
+@media (max-width: 600px) {
+  .dark .quote-wrapper {
+    max-width: 90%; } }
 
 .light .adminPage-container {
   display: flex;

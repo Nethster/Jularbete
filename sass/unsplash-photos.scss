@@ -25,4 +25,18 @@
     .hidden-image {
         display: none;
     }
+
+    .quote-wrapper {
+        max-width: 500px;
+    }
+
+    .random-quote {
+        text-align: center;
+    }
+    
+    @media (max-width:600px) {
+        .quote-wrapper {
+            max-width: 90%;
+        }
+    }
 }

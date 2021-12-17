@@ -265,9 +265,7 @@ $background-color-dark: #292c35;
 			margin-right: 0;
 		}
 
-		.created-products-container ul li {
-			margin-right: 0;
-		}
+		
 
 		.frontpage___description {
 			max-width: 95%;
@@ -287,6 +285,16 @@ $background-color-dark: #292c35;
 		}
 
 		.payment-icon {
+			margin-right: 0;
+		}
+	}
+
+	@media (max-width: 530px) {
+		.created-products-container ul {
+			flex-direction: column;
+		}
+
+		.created-products-container ul li {
 			margin-right: 0;
 		}
 	}

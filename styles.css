@@ -684,9 +684,37 @@
 .light .adminPage-container {
   display: flex;
   justify-content: center;
-  border: solid, 1px, black; }
+  border: solid, 1px, black;
+  max-width: 800px; }
+
+.light .add-product-button {
+  color: #000000;
+  border: 2px solid #000000;
+  font-family: 'Roboto Mono', monospace;
+  padding: 0.5rem; }
 
 .dark .adminPage-container {
   display: flex;
   justify-content: center;
-  border: solid, 1px, black; }
+  border: solid, 1px, black;
+  max-width: 800px; }
+
+.dark .add-product-button {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  font-family: 'Roboto Mono', monospace;
+  padding: 0.5rem; }
+
+.light .clear-cart {
+  color: #000000;
+  color: #000000;
+  border: 2px solid #000000;
+  font-family: 'Roboto Mono', monospace;
+  padding: 0.5rem; }
+
+.dark .clear-cart {
+  color: #ffffff;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  font-family: 'Roboto Mono', monospace;
+  padding: 0.5rem; }

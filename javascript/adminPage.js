@@ -14,7 +14,7 @@ function renderProducts() {
 
     listString += `
     <li>
-            <img src=./images/${product.img} class="product__image" alt="">
+            <img src="./images/${product.img}" class="product__image" alt="">
             <h3>${product.name}</h3>
             <h4>${product.price} SEK</h4>
             <button onclick="addToWishlist()" class="add-to-favorites" title="Add to favorites">
@@ -35,7 +35,9 @@ function addProduct() {
     let name = document.querySelector("#name").value;
     let price = document.querySelector("#price").value;
     let img = document.querySelector("#chooseFile").files[0].name;
-      let newItem = {
+    let index = productList.length + 1;
+    let newItem = {
+        id: index,
         name: name,
         price: price,
         img: img,

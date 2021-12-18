@@ -2,6 +2,7 @@
 @import "./login-page.scss";
 @import "./unsplash-photos.scss";
 @import "./admin-page.scss";
+@import "shopping-cart.scss";
 
 .light {@include main($color-light, $background-color-light)};
 .dark {@include main($color-dark, $background-color-dark)};
@@ -11,3 +12,5 @@
 .dark {@include unsplash-feature($color-dark, $background-color-dark)};
 .light {@include admin-page($color-light, $background-color-light)};
 .dark {@include admin-page($color-dark, $background-color-dark)};
+.light {@include shopping-cart($color-light, $background-color-light)};
+.dark {@include shopping-cart($color-dark, $background-color-dark)};

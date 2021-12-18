@@ -3,5 +3,13 @@
     display: flex;
     justify-content: center;  
     border: solid, 1px, black;
-} 
+    max-width: 800px;
+}
+
+.add-product-button {
+    color: $foreground;
+    border: 2px solid $foreground;
+    font-family: 'Roboto Mono', monospace;
+    padding: 0.5rem;
+}
 }

@@ -1,0 +1,9 @@
+@mixin shopping-cart($foreground, $background) {
+    .clear-cart {
+        color: $foreground;
+        color: $foreground;
+        border: 2px solid $foreground;
+        font-family: 'Roboto Mono', monospace;
+        padding: 0.5rem;
+    }
+}

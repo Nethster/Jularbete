@@ -132,6 +132,21 @@
             <p class="random-quote"></p>
         </div>
     </section>
+    <!--Shopping cart-->
+    <section class="cart-overlay">
+        <div class="cart">
+            <button class="close-cart-button"><span class="material-icons">&#xe5cd;</span></button>
+            <h2>Your Cart</h2>
+            <div class="cart-contents">
+                <!-- Cart items show up here -->
+            </div>
+        </div>
+        <div class="cart-footer">
+            <h3>Total: <span class="cart-total">0</span> SEK</h3>
+            <button class="clear-cart">Clear Cart</button>
+        </div>
+    </section>
+
     </main>
     <hr>
     <footer>
@@ -164,5 +179,7 @@
     <script src="/javascript/adminPage.js" defer ></script> 
     <script src="/javascript/products-database.js" defer ></script> 
     <script src="/wishlist.js"></script>
+    <script src="javascript/shopping-cart.js"></script>
+    <!--the scripts are placed before closing body tag to make sure that the text and images on the page are loaded first-->
 </body>
 </html>

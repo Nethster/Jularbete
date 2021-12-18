@@ -20,7 +20,7 @@
             <ul>
                 <li><a href="/login-page.html" title="My Account"><span class="material-icons">&#xe853;</span></a></li>
                 <li><a href="#" title="Wishlist"><span class="material-icons">&#xe87d;</span></a></li>
-                <li><a href="#" title="Shopping Cart"><span class="material-icons">&#xe8cc;</span></a></li>
+                <li><button title="Shopping Cart" class="cart-icon"><span class="material-icons">&#xe8cc;</span><span class="item-total">0</span></button></li>
                 <li><div>
                     <input type="checkbox" class="checkbox" id="chk" />
                     <label class="label" for="chk">
@@ -126,31 +126,31 @@
         </button>
         <div class="unsplash-image-wrapper">
             <!--the image fetched from API will be shown here-->
-            <img class="unsplash-image hidden-image"/>
+            <img class="unsplash-image hidden-image" src="#" alt="random flowerpot picture"/>
         </div>
         <div class="quote-wrapper">
             <p class="random-quote"></p>
         </div>
     </section>
-    <!--Shopping cart-->
+    <!--shopping cart-->
     <section class="cart-overlay">
         <div class="cart">
             <button class="close-cart-button"><span class="material-icons">&#xe5cd;</span></button>
             <h2>Your Cart</h2>
-            <div class="cart-contents">
-                <!-- Cart items show up here -->
+            <div class="cart-content">
+                <!-- cart items show up here -->
             </div>
         </div>
         <div class="cart-footer">
             <h3>Total: <span class="cart-total">0</span> SEK</h3>
-            <button class="clear-cart">Clear Cart</button>
+            <button class="clear-cart-button">Clear Cart</button>
         </div>
     </section>
 
     </main>
     <hr>
     <footer>
-        <h3>Flower Power</h1>
+        <h3>Flower Power</h3>
         <div class="footer-list-wrapper">
             <ul>
                 <li>Footers are all the rage © Tom</li>

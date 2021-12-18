@@ -1,9 +1,22 @@
 @mixin shopping-cart($foreground, $background) {
-    .clear-cart {
-        color: $foreground;
+    .clear-cart-button {
         color: $foreground;
         border: 2px solid $foreground;
         font-family: 'Roboto Mono', monospace;
         padding: 0.5rem;
+    }
+
+    .item-total {
+        color: $background;
+        font-family: 'Roboto Mono', monospace;
+        background-color: $foreground;
+        padding: 0.1rem 0.4rem;
+        border-radius: 0.5rem;
+    }
+
+    @media (max-width:500px) {
+        .item-total {
+            display: none;
+        }
     }
 }

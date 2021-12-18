@@ -705,16 +705,36 @@
   font-family: 'Roboto Mono', monospace;
   padding: 0.5rem; }
 
-.light .clear-cart {
-  color: #000000;
+.light .clear-cart-button {
   color: #000000;
   border: 2px solid #000000;
   font-family: 'Roboto Mono', monospace;
   padding: 0.5rem; }
 
-.dark .clear-cart {
+.light .item-total {
   color: #ffffff;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #000000;
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.5rem; }
+
+@media (max-width: 500px) {
+  .light .item-total {
+    display: none; } }
+
+.dark .clear-cart-button {
   color: #ffffff;
   border: 2px solid #ffffff;
   font-family: 'Roboto Mono', monospace;
   padding: 0.5rem; }
+
+.dark .item-total {
+  color: #292c35;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #ffffff;
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.5rem; }
+
+@media (max-width: 500px) {
+  .dark .item-total {
+    display: none; } }

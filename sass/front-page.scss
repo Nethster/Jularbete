@@ -10,6 +10,7 @@ $background-color-dark: #292c35;
 		font-family: "Roboto Mono", monospace;
 		font-size: 16px;
 		margin: 0;
+		margin-left: 0;
 		padding: 0;
 		list-style: none;
 		box-sizing: border-box;
@@ -193,6 +194,46 @@ $background-color-dark: #292c35;
 		right: 5%;
 	}
 
+// styling for footer
+
+	footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		h3 {
+			margin: 0;
+			padding: 0.5rem;
+		}
+		
+	}
+
+	.footer-list-wrapper {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		
+		ul {
+			padding: 0;
+			margin-right: 30px;
+			text-align: center;
+			li {
+				line-height: 1.2;
+			}
+		}
+	}
+
+	.payment-icons {
+		display: flex;
+		padding: 0;
+	}
+
+	.payment-icon {
+		max-height: 30px;
+		margin: 0;
+		padding: 0.5rem;
+	}
+
 	.material-icons {
 		font-size: 36px;
 		color: $foreground;
@@ -224,13 +265,37 @@ $background-color-dark: #292c35;
 			margin-right: 0;
 		}
 
-		.created-products-container ul li {
-			margin-right: 0;
-		}
+		
 
 		.frontpage___description {
 			max-width: 95%;
 			padding-left: 0.7rem;
+		}
+
+		.footer-list-wrapper {
+			flex-direction: column;
+			ul{
+				margin-right: 0;
+			}
+		}
+
+		.payment-icons {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.payment-icon {
+			margin-right: 0;
+		}
+	}
+
+	@media (max-width: 530px) {
+		.created-products-container ul {
+			flex-direction: column;
+		}
+
+		.created-products-container ul li {
+			margin-right: 0;
 		}
 	}
 }

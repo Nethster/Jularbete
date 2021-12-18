@@ -1,9 +1,4 @@
 /* color variables for the dark/light modes*/
-.adminPage-container {
-  display: flex;
-  justify-content: center;
-  border: solid, 1px, black; }
-
 .light {
   /*darktheme styling */ }
   .light body {
@@ -11,6 +6,7 @@
     font-family: "Roboto Mono", monospace;
     font-size: 16px;
     margin: 0;
+    margin-left: 0;
     padding: 0;
     list-style: none;
     box-sizing: border-box;
@@ -59,6 +55,8 @@
     max-width: 100%; }
   .light h1 {
     padding-right: 1rem; }
+  .light a:link, .light a:visited {
+    color: #000000; }
   .light .product__image {
     height: 300px;
     max-width: 250px; }
@@ -129,6 +127,31 @@
     position: absolute;
     bottom: 10%;
     right: 5%; }
+  .light footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .light footer h3 {
+      margin: 0;
+      padding: 0.5rem; }
+  .light .footer-list-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .light .footer-list-wrapper ul {
+      padding: 0;
+      margin-right: 30px;
+      text-align: center; }
+      .light .footer-list-wrapper ul li {
+        line-height: 1.2; }
+  .light .payment-icons {
+    display: flex;
+    padding: 0; }
+  .light .payment-icon {
+    max-height: 30px;
+    margin: 0;
+    padding: 0.5rem; }
   .light .material-icons {
     font-size: 36px;
     color: #000000; }
@@ -147,11 +170,23 @@
       max-height: 20px; }
     .light nav ul li:nth-last-child() {
       margin-right: 0; }
-    .light .product-list-wrapper ul li {
-      margin-right: 0; }
     .light .frontpage___description {
       max-width: 95%;
-      padding-left: 0.7rem; } }
+      padding-left: 0.7rem; }
+    .light .footer-list-wrapper {
+      flex-direction: column; }
+      .light .footer-list-wrapper ul {
+        margin-right: 0; }
+    .light .payment-icons {
+      flex-direction: column;
+      align-items: center; }
+    .light .payment-icon {
+      margin-right: 0; } }
+  @media (max-width: 530px) {
+    .light .created-products-container ul {
+      flex-direction: column; }
+    .light .created-products-container ul li {
+      margin-right: 0; } }
 
 .dark {
   /*darktheme styling */ }
@@ -160,6 +195,7 @@
     font-family: "Roboto Mono", monospace;
     font-size: 16px;
     margin: 0;
+    margin-left: 0;
     padding: 0;
     list-style: none;
     box-sizing: border-box;
@@ -208,6 +244,8 @@
     max-width: 100%; }
   .dark h1 {
     padding-right: 1rem; }
+  .dark a:link, .dark a:visited {
+    color: #ffffff; }
   .dark .product__image {
     height: 300px;
     max-width: 250px; }
@@ -278,6 +316,31 @@
     position: absolute;
     bottom: 10%;
     right: 5%; }
+  .dark footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .dark footer h3 {
+      margin: 0;
+      padding: 0.5rem; }
+  .dark .footer-list-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .dark .footer-list-wrapper ul {
+      padding: 0;
+      margin-right: 30px;
+      text-align: center; }
+      .dark .footer-list-wrapper ul li {
+        line-height: 1.2; }
+  .dark .payment-icons {
+    display: flex;
+    padding: 0; }
+  .dark .payment-icon {
+    max-height: 30px;
+    margin: 0;
+    padding: 0.5rem; }
   .dark .material-icons {
     font-size: 36px;
     color: #ffffff; }
@@ -296,11 +359,23 @@
       max-height: 20px; }
     .dark nav ul li:nth-last-child() {
       margin-right: 0; }
-    .dark .product-list-wrapper ul li {
-      margin-right: 0; }
     .dark .frontpage___description {
       max-width: 95%;
-      padding-left: 0.7rem; } }
+      padding-left: 0.7rem; }
+    .dark .footer-list-wrapper {
+      flex-direction: column; }
+      .dark .footer-list-wrapper ul {
+        margin-right: 0; }
+    .dark .payment-icons {
+      flex-direction: column;
+      align-items: center; }
+    .dark .payment-icon {
+      margin-right: 0; } }
+  @media (max-width: 530px) {
+    .dark .created-products-container ul {
+      flex-direction: column; }
+    .dark .created-products-container ul li {
+      margin-right: 0; } }
 
 .light {
   /*MODAL CONTENT*/ }
@@ -342,7 +417,7 @@
   .light .forgot-pass a:hover {
     color: #5fa087;
     border: 1px solid #5fa087; }
-  .light footer {
+  .light .login-footer {
     display: flex;
     flex-direction: column;
     align-items: center; }
@@ -350,7 +425,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 450px; }
+    width: 400px; }
   .light .sign-up a {
     font-size: x-large;
     color: #101010; }
@@ -418,6 +493,9 @@
     opacity: 0; }
   to {
     opacity: 1; } }
+  @media (max-width: 650px) {
+    .light .sign-up p {
+      width: 350px; } }
 
 .dark {
   /*MODAL CONTENT*/ }
@@ -459,7 +537,7 @@
   .dark .forgot-pass a:hover {
     color: #5fa087;
     border: 1px solid #5fa087; }
-  .dark footer {
+  .dark .login-footer {
     display: flex;
     flex-direction: column;
     align-items: center; }
@@ -467,7 +545,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 450px; }
+    width: 400px; }
   .dark .sign-up a {
     font-size: x-large;
     color: #101010; }
@@ -535,6 +613,9 @@
     opacity: 0; }
   to {
     opacity: 1; } }
+  @media (max-width: 650px) {
+    .dark .sign-up p {
+      width: 350px; } }
 
 .light .get-inspired-wrapper {
   display: flex;
@@ -558,6 +639,16 @@
 .light .hidden-image {
   display: none; }
 
+.light .quote-wrapper {
+  max-width: 500px; }
+
+.light .random-quote {
+  text-align: center; }
+
+@media (max-width: 600px) {
+  .light .quote-wrapper {
+    max-width: 90%; } }
+
 .dark .get-inspired-wrapper {
   display: flex;
   flex-direction: column;
@@ -579,3 +670,23 @@
 
 .dark .hidden-image {
   display: none; }
+
+.dark .quote-wrapper {
+  max-width: 500px; }
+
+.dark .random-quote {
+  text-align: center; }
+
+@media (max-width: 600px) {
+  .dark .quote-wrapper {
+    max-width: 90%; } }
+
+.light .adminPage-container {
+  display: flex;
+  justify-content: center;
+  border: solid, 1px, black; }
+
+.dark .adminPage-container {
+  display: flex;
+  justify-content: center;
+  border: solid, 1px, black; }

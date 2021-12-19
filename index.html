@@ -38,7 +38,7 @@
             >
           </li>
           <li>
-            <button title="Shopping Cart" class="cart-icon">
+            <button title="Shopping Cart" class="cart-icon" onclick="show()">
               <span class="material-icons">&#xe8cc;</span
               ><span class="item-total">0</span>
             </button>
@@ -162,19 +162,19 @@
       <!--shopping cart-->
       <section class="cart-overlay">
         <div class="cart">
-          <button class="close-cart-button">
+          <button class="close-cart-button" onclick="hide()">
             <span class="material-icons">&#xe5cd;</span>
           </button>
           <h2>Your Cart</h2>
           <div class="cart-content">
             <!-- cart items show up here -->
           </div>
-        </div>
-        <div class="cart-footer">
-          <h3>Total: <span class="cart-total">0</span> SEK</h3>
-          <div class="cart-buttons">
-            <button class="clear-cart-button">Clear Cart</button>
-            <button class="checkout">Checkout</button>
+          <div class="cart-footer">
+            <h3>Total: <span class="cart-total">0</span> SEK</h3>
+            <div class="cart-buttons">
+              <button class="clear-cart-button" onclick="clearTheCart()">Clear Cart</button>
+              <button class="checkout">Checkout</button>
+            </div>
           </div>
         </div>
       </section>

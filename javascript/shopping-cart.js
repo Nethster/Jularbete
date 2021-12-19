@@ -7,6 +7,7 @@ const overlay = document.querySelector(".cart-overlay");
 const cartTotal = document.querySelector(".cart-total");
 const clearCartButton = document.querySelector(".clear-cart-button");
 const itemTotals = document.querySelector(".item-total");
+const cartFooter = document.querySelector(".cart-footer");
 
 // Creating an empty cart array
 let cart = JSON.parse(localStorage.getItem("CART")) || [];
@@ -95,5 +96,24 @@ function changeNumberOfUnits(action, id) {
       numberOfUnits,
     };
   });
+  updateCart();
+}
+
+// Showing/hiding the cart
+
+const show = () => {
+  shoppingCart.classList.add("show");
+  overlay.classList.add("show");
+}
+
+const hide = () => {
+  shoppingCart.classList.remove("show");
+  overlay.classList.remove("show");
+}
+
+// Clearing the cart
+
+const clearTheCart = () => {
+  cart = [];
   updateCart();
 }

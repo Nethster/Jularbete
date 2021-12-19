@@ -55,7 +55,8 @@
     max-width: 100%; }
   .light h1 {
     padding-right: 1rem; }
-  .light a:link, .light a:visited {
+  .light a:link,
+  .light a:visited {
     color: #000000; }
   .light .product__image {
     height: 300px;
@@ -244,7 +245,8 @@
     max-width: 100%; }
   .dark h1 {
     padding-right: 1rem; }
-  .dark a:link, .dark a:visited {
+  .dark a:link,
+  .dark a:visited {
     color: #ffffff; }
   .dark .product__image {
     height: 300px;
@@ -625,7 +627,7 @@
 .light .get-inspired-button {
   color: #000000;
   border: 2px solid #000000;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   padding: 0.5rem 1rem; }
 
 .light .unsplash-image-wrapper {
@@ -657,7 +659,7 @@
 .dark .get-inspired-button {
   color: #ffffff;
   border: 2px solid #ffffff;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   padding: 0.5rem 1rem; }
 
 .dark .unsplash-image-wrapper {
@@ -690,7 +692,7 @@
 .light .add-product-button {
   color: #000000;
   border: 2px solid #000000;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   padding: 0.5rem; }
 
 .dark .adminPage-container {
@@ -702,21 +704,75 @@
 .dark .add-product-button {
   color: #ffffff;
   border: 2px solid #ffffff;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   padding: 0.5rem; }
 
 .light .clear-cart-button {
   color: #000000;
   border: 2px solid #000000;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   padding: 0.5rem; }
 
 .light .item-total {
   color: #ffffff;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
   background-color: #000000;
   padding: 0.1rem 0.4rem;
   border-radius: 0.5rem; }
+
+.light .checkout {
+  color: #000000;
+  border: 2px solid #000000;
+  font-family: "Roboto Mono", monospace;
+  padding: 0.5rem; }
+
+.light .cart-item {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0; }
+
+.light .cart-item div {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.light .cart-item .item-info {
+  flex: 1;
+  border-radius: 0 10px 10px 0;
+  padding: 10px; }
+
+.light .cart-item .item-info:hover {
+  color: #ffffff;
+  background-color: #000000;
+  cursor: pointer; }
+
+.light .cart-item .item-info img {
+  width: 75px; }
+
+.light .cart-item .unit-price {
+  flex: 1;
+  font-size: 1.2rem; }
+
+.light .cart-item .units {
+  flex: 1; }
+
+.light .cart-item .units .number {
+  margin: 0 10px;
+  font-size: 1.2rem; }
+
+.light .cart-item .units .btn {
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer; }
+
+.light .cart-buttons {
+  display: flex;
+  justify-content: space-around; }
 
 @media (max-width: 500px) {
   .light .item-total {
@@ -725,15 +781,69 @@
 .dark .clear-cart-button {
   color: #ffffff;
   border: 2px solid #ffffff;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   padding: 0.5rem; }
 
 .dark .item-total {
   color: #292c35;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
   background-color: #ffffff;
   padding: 0.1rem 0.4rem;
   border-radius: 0.5rem; }
+
+.dark .checkout {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  font-family: "Roboto Mono", monospace;
+  padding: 0.5rem; }
+
+.dark .cart-item {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0; }
+
+.dark .cart-item div {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.dark .cart-item .item-info {
+  flex: 1;
+  border-radius: 0 10px 10px 0;
+  padding: 10px; }
+
+.dark .cart-item .item-info:hover {
+  color: #292c35;
+  background-color: #ffffff;
+  cursor: pointer; }
+
+.dark .cart-item .item-info img {
+  width: 75px; }
+
+.dark .cart-item .unit-price {
+  flex: 1;
+  font-size: 1.2rem; }
+
+.dark .cart-item .units {
+  flex: 1; }
+
+.dark .cart-item .units .number {
+  margin: 0 10px;
+  font-size: 1.2rem; }
+
+.dark .cart-item .units .btn {
+  width: 20px;
+  height: 20px;
+  color: #292c35;
+  background-color: #ffffff;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer; }
+
+.dark .cart-buttons {
+  display: flex;
+  justify-content: space-around; }
 
 @media (max-width: 500px) {
   .dark .item-total {

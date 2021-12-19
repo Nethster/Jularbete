@@ -1,22 +1,87 @@
 @mixin shopping-cart($foreground, $background) {
-    .clear-cart-button {
-        color: $foreground;
-        border: 2px solid $foreground;
-        font-family: 'Roboto Mono', monospace;
-        padding: 0.5rem;
-    }
+  .clear-cart-button {
+    color: $foreground;
+    border: 2px solid $foreground;
+    font-family: "Roboto Mono", monospace;
+    padding: 0.5rem;
+  }
 
+  .item-total {
+    color: $background;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+    background-color: $foreground;
+    padding: 0.1rem 0.4rem;
+    border-radius: 0.5rem;
+  }
+
+  .checkout {
+    color: $foreground;
+    border: 2px solid $foreground;
+    font-family: "Roboto Mono", monospace;
+    padding: 0.5rem;
+  }
+
+  .cart-item {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+
+  .cart-item div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cart-item .item-info {
+    flex: 1;
+    border-radius: 0 10px 10px 0;
+    padding: 10px;
+  }
+
+  .cart-item .item-info:hover {
+    color: $background;
+    background-color: $foreground;
+    cursor: pointer;
+  }
+
+  .cart-item .item-info img {
+    width: 75px;
+  }
+
+  .cart-item .unit-price {
+    flex: 1;
+    font-size: 1.2rem;
+  }
+
+  .cart-item .units {
+    flex: 1;
+  }
+
+  .cart-item .units .number {
+    margin: 0 10px;
+    font-size: 1.2rem;
+  }
+
+  .cart-item .units .btn {
+    width: 20px;
+    height: 20px;
+    color: $background;
+    background-color: $foreground;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .cart-buttons {
+      display: flex;
+      justify-content: space-around;
+  }
+
+  @media (max-width: 500px) {
     .item-total {
-        color: $background;
-        font-family: 'Roboto Mono', monospace;
-        background-color: $foreground;
-        padding: 0.1rem 0.4rem;
-        border-radius: 0.5rem;
+      display: none;
     }
-
-    @media (max-width:500px) {
-        .item-total {
-            display: none;
-        }
-    }
+  }
 }

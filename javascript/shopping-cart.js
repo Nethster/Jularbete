@@ -8,6 +8,7 @@ const cartTotal = document.querySelector(".cart-total");
 const clearCartButton = document.querySelector(".clear-cart-button");
 const itemTotals = document.querySelector(".item-total");
 const cartFooter = document.querySelector(".cart-footer");
+const successMessage = document.querySelector(".success-message");
 
 // Creating an empty cart array
 let cart = JSON.parse(localStorage.getItem("CART")) || [];
@@ -116,4 +117,16 @@ const hide = () => {
 const clearTheCart = () => {
   cart = [];
   updateCart();
+}
+
+// Showing the success message
+
+const showSuccessMessage = () => {
+  hide();
+  clearTheCart();
+  successMessage.classList.add("show");
+}
+
+const hideSuccessMessage = () => {
+  successMessage.classList.remove("show");
 }

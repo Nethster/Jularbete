@@ -173,11 +173,16 @@
             <h3>Total: <span class="cart-total">0</span> SEK</h3>
             <div class="cart-buttons">
               <button class="clear-cart-button" onclick="clearTheCart()">Clear Cart</button>
-              <button class="checkout">Checkout</button>
+              <button class="checkout" onclick="showSuccessMessage()">Checkout</button>
             </div>
           </div>
         </div>
       </section>
+      <div class="success-message">
+          <span class="material-icons">&#xef76;</span>
+          <h2>Thanks for Your Purchase!</h2>
+          <button class="close-success-message" onclick="hideSuccessMessage()">Close</button>
+      </div>
     </main>
     <hr />
     <footer>

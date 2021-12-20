@@ -15,7 +15,7 @@ function renderProducts() {
             <img src="./images/${product.img}" class="product__image" alt="">
             <h3>${product.name}</h3>
             <h4>${product.price} SEK</h4>
-            <button onclick="addToWishlist()" class="add-to-favorites" title="Add to favorites">
+            <button class="add-to-favorites" title="Add to favorites" onclick="addToWishlist()">
                 <img src="images/favorite_border_black_24dp.svg" alt="">
             </button>
             <button class="add-to-cart" title="Add to Shopping Cart" onclick="addToCart(${product.id})">
@@ -59,20 +59,3 @@ function loadProducts() {
 
 renderProducts();
 
-let addButton = document.querySelectorAll(".add-to-favorites");
-
-for (let i = 0; i < addButton.length; i++);
-{
-  console.log(addButton);
-}
-
-function addToWishlist(namn) {
-  var wishlist = JSON.parse(localStorage.getItem("keta"));
-  for (let i = 0; i < wishlist.length; i++) {
-    if (wishlist[i].name == namn) {
-      wishlist[i].addtowish = true;
-    }
-  }
-
-  localStorage.keta = JSON.stringify(wishlist);
-}

@@ -7,13 +7,26 @@ updateWishlist()
 
 
 
-function addToWishlist() {
+function addToWishlist(id) {
+
+
+
+console.log(productList)
+   /* 
     if (wishlist.some((item) => item.id !== id)) {
+
+        
+
+    } else {
+        */
         const item = productList.find((product) => product.id === id);
+        console.log(id)
         wishlist.push({
             ...item, 
         });       
-    }
+  /*  }*/
+
+    console.log(id)
     updateWishlist()
 } 
 
@@ -24,6 +37,9 @@ function updateWishlist(){
 
 function renderWishlistItem() {
     wishlistContent.innerHTML = ""; 
+    // if list is undefined " " skriv i docs listan är tomt 
+
+    //
     wishlist.forEach((item) => { 
         wishlistContent.innerHTML += `
         <div class="wishlist-item">
@@ -41,7 +57,7 @@ function renderWishlistItem() {
 
 }
 
-function removeItemFromWishlist() {
+function removeItemFromWishlist(id) {
     wishlist = wishlist.filter((item) => item.id !==id); 
     updateWishlist(); 
 } 

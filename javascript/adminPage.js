@@ -15,7 +15,7 @@ function renderProducts() {
             <img src="./images/${product.img}" class="product__image" alt="">
             <h3>${product.name}</h3>
             <h4>${product.price} SEK</h4>
-            <button class="add-to-favorites" title="Add to favorites" onclick="addToWishlist()">
+            <button class="add-to-favorites" title="Add to favorites" onclick="addToWishlist(${product.id})">
                 <img src="images/favorite_border_black_24dp.svg" alt="">
             </button>
             <button class="add-to-cart" title="Add to Shopping Cart" onclick="addToCart(${product.id})">

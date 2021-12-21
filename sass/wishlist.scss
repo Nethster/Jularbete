@@ -1,4 +1,4 @@
-
+@mixin wishlist($foreground, $background) {
   // fixing overlay
 
   .wishlist-overlay {
@@ -21,6 +21,7 @@
     width: 60%;
     height: 80%;
     padding: 2rem;
+    background-color: $background;
     border: solid 3px $foreground;
     border-radius: 2rem;
     z-index: 3;
@@ -39,3 +40,5 @@
   .wishlist-overlay.show {
     visibility: visible;
   }
+
+}

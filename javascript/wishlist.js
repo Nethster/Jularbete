@@ -61,3 +61,13 @@ function removeItemFromWishlist(id) {
     wishlist = wishlist.filter((item) => item.id !==id); 
     updateWishlist(); 
 } 
+
+const showWishlist = () => {
+    wishlistContent.classList.add("show");
+    wishlistOverlay.classList.add("show");
+  }
+  
+  const hideWishlist = () => {
+    wishlistContent.classList.remove("show");
+    wishlistOverlay.classList.remove("show");
+  }

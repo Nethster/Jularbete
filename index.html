@@ -34,7 +34,7 @@
           </li>
           <li>
             <a href="#" title="Wishlist"
-              ><span class="material-icons">&#xe87d;</span></a
+            onclick="showWishlist()"><span class="material-icons">&#xe87d;</span></a
             >
           </li>
           <li>
@@ -115,12 +115,12 @@
       <!--Wishlist section -->
       <section class="wishlist-overlay"> 
         <div class="wishlist">
-          <button class="close-wishlist-button">
+          <button class="close-wishlist-button" onclick="hideWishlist()">
             <span class="material-icons">&#xe5cd;</span>
           </button>
           <h2>Wishlist</h2>
           <div class="wishlist-content">
-            <!-- cart items show up here -->
+            <!-- wishlist items show up here -->
           </div>
 
         </div>

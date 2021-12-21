@@ -15,3 +15,5 @@
 .dark {@include admin-page($color-dark, $background-color-dark)};
 .light {@include shopping-cart($color-light, $background-color-light)};
 .dark {@include shopping-cart($color-dark, $background-color-dark)};
+.light {@include wishlist($color-light, $background-color-light)};
+.dark {@include wishlist($color-dark, $background-color-dark)};

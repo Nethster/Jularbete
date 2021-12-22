@@ -442,6 +442,31 @@
     background-color: #101010;
     height: 1px;
     margin-top: 33px; }
+  .light .modalFAQ {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); }
+  .light .containerFAQ {
+    border: 2px solid black;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffdb58;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
+    width: 50rem;
+    height: 35rem;
+    top: 50%;
+    left: 50%; }
   .light .button {
     background-color: coral;
     padding: 1em 2em;
@@ -562,6 +587,31 @@
     background-color: #101010;
     height: 1px;
     margin-top: 33px; }
+  .dark .modalFAQ {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); }
+  .dark .containerFAQ {
+    border: 2px solid black;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffdb58;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
+    width: 50rem;
+    height: 35rem;
+    top: 50%;
+    left: 50%; }
   .dark .button {
     background-color: coral;
     padding: 1em 2em;

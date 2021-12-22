@@ -1,166 +1,197 @@
 @mixin login($foreground, $background) {
-  .login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .user-name {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-  }
-  .user-name input {
-    border: none;
-  }
-  .user-name label {
-    border-top: 1px solid $foreground;
-  }
-  .user-password {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-  }
-  .user-password input {
-    border: none;
-  }
-  .user-password label {
-    border-top: 1px solid $foreground;
-  }
-  .submit {
-    display: flex;
-    justify-content: center;
-  }
-  .submit input {
-    width: 100%;
-    background-color: rgb(253, 247, 247);
-    border-radius: 20px;
-  }
-  .submit input:hover {
-    color: rgb(95, 160, 135);
-    border: 1px solid rgb(95, 160, 135);
-  }
-  .forgot-pass {
-    padding-top: 18px;
-  }
-  .forgot-pass a {
-    color: $foreground;
-    font-size: large;
-  }
-  .forgot-pass a:hover {
-    color: rgb(95, 160, 135);
-    border: 1px solid rgb(95, 160, 135);
-  }
+	.login {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.user-name {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 20px;
+	}
+	.user-name input {
+		border: none;
+	}
+	.user-name label {
+		border-top: 1px solid $foreground;
+	}
+	.user-password {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 20px;
+	}
+	.user-password input {
+		border: none;
+	}
+	.user-password label {
+		border-top: 1px solid $foreground;
+	}
+	.submit {
+		display: flex;
+		justify-content: center;
+	}
+	.submit input {
+		width: 100%;
+		background-color: rgb(253, 247, 247);
+		border-radius: 20px;
+	}
+	.submit input:hover {
+		color: rgb(95, 160, 135);
+		border: 1px solid rgb(95, 160, 135);
+	}
+	.forgot-pass {
+		padding-top: 18px;
+	}
+	.forgot-pass a {
+		color: $foreground;
+		font-size: large;
+	}
+	.forgot-pass a:hover {
+		color: rgb(95, 160, 135);
+		border: 1px solid rgb(95, 160, 135);
+	}
 
-  .login-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .sign-up {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 400px;
-  }
+	.login-footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.sign-up {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 400px;
+	}
 
-  .sign-up a {
-    font-size: x-large;
-    color: #101010;
-  }
-  .sign-up a:hover {
-    color: rgb(95, 160, 135);
-    border: 1px solid rgb(95, 160, 135);
-  }
-  hr {
-    border: 0;
-    clear: both;
-    display: block;
-    width: 96%;
-    background-color: #101010;
-    height: 1px;
-    margin-top: 33px;
-  }
+	.sign-up a {
+		font-size: x-large;
+		color: #101010;
+	}
+	.sign-up a:hover {
+		color: rgb(95, 160, 135);
+		border: 1px solid rgb(95, 160, 135);
+	}
+	hr {
+		border: 0;
+		clear: both;
+		display: block;
+		width: 96%;
+		background-color: #101010;
+		height: 1px;
+		margin-top: 33px;
+	}
 
-  /*MODAL CONTENT*/
+	/*MODAL CONTENT*/
+	// FOOTER MODAL
 
-  .button {
-    background-color: coral;
-    padding: 1em 2em;
-    color: $background;
-    border: 0;
-  }
+	.modalFAQ {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		overflow: auto;
+		background-color: rgba(0, 0, 0, 0.4);
+	}
 
-  .button:hover {
-    background: #333;
-  }
+	.containerFAQ {
+		border: 2px solid black;
+		position: fixed;
+		justify-content: center;
+		align-items: center;
+		background-color: #ffdb58;
+		box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+		animation-name: modalopen;
+		animation-duration: 1s;
+		width: 50rem;
+		height: 35rem;
+		top: 50%;
+		left: 50%;
+	}
 
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
+	//MODAL SIGNUP
+	.button {
+		background-color: coral;
+		padding: 1em 2em;
+		color: $background;
+		border: 0;
+	}
 
-  .modal-content {
-    background-color: #f4f4f4;
-    margin: 0;
-    width: 300px;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
-    animation-name: modalopen;
-    animation-duration: 1s;
-  }
+	.button:hover {
+		background: #333;
+	}
 
-  .modal-header h2,
-  .modal-footer h3 {
-    margin: 0;
-  }
+	.modal {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		overflow: auto;
+		background-color: rgba(0, 0, 0, 0.4);
+	}
 
-  .modal-header {
-    background: coral;
-    padding: 15px;
-    color: $background;
-  }
+	.modal-content {
+		background-color: #f4f4f4;
+		margin: 0;
+		width: 300px;
+		box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+		animation-name: modalopen;
+		animation-duration: 1s;
+	}
 
-  .modal-body {
-    padding: 10px 20px;
-  }
+	.modal-header h2,
+	.modal-footer h3 {
+		margin: 0;
+	}
 
-  .modal-footer {
-    background: coral;
-    padding: 10px;
-    color: $background;
-    text-align: center;
-  }
-  .closeBtn {
-    color: $background;
-    float: right;
-    font-size: 30px;
-  }
+	.modal-header {
+		background: coral;
+		padding: 15px;
+		color: $background;
+	}
 
-  .closeBtn:hover,
-  .closeBtn:focus {
-    color: $foreground;
-    text-decoration: none;
-    cursor: pointer;
-  }
+	.modal-body {
+		padding: 10px 20px;
+	}
 
-  @keyframes modalopen {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+	.modal-footer {
+		background: coral;
+		padding: 10px;
+		color: $background;
+		text-align: center;
+	}
+	.closeBtn {
+		color: $background;
+		float: right;
+		font-size: 30px;
+	}
 
-  @media (max-width: 650px) {
-    .sign-up p {
-      width: 350px;
-    }
-  }
+	.closeBtn:hover,
+	.closeBtn:focus {
+		color: $foreground;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+	@keyframes modalopen {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+
+	@media (max-width: 650px) {
+		.sign-up p {
+			width: 350px;
+		}
+	}
 }

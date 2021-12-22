@@ -20,7 +20,6 @@
             <ul>
                 <li><a href="/admin-page.html" title="Admin"><span class="material-icons">&#xef3d;</span></a></li>
                 <li><a href="#" title="Wishlist"><span class="material-icons">&#xe87d;</span></a></li>
-                <li><a href="/Shopping Cart/store.html" title="Shopping Cart"><span class="material-icons">&#xe8cc;</span></a></li>
                 <li><div>
                     <input type="checkbox" class="checkbox" id="chk" />
                     <label class="label" for="chk">
@@ -36,16 +35,16 @@
     <main>
         <div class="adminPage-container">
             <input class="inputFile" type="file" id="chooseFile"> 
-            <input type="text" id="name"> 
-            <input type="number" id="price"> 
-            <button onclick="addProduct()">Add item</button>
+            <input type="text" id="name" placeholder="Products name"> 
+            <input type="number" id="price" placeholder="Price"> 
+            <button class="add-product-button" onclick="addProduct()">Add item</button>
             <span>   
             </span>
         </div>
     </main>
     <hr>
     <footer>
-        <h3>Flower Power</h1>
+        <h3>Flower Power</h3>
         <div class="footer-list-wrapper">
             <ul>
                 <li>Footers are all the rage © Tom</li>

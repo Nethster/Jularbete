@@ -39,3 +39,4 @@ toggle.addEventListener("change", () => {
 		disableDarkMode();
 	}
 });
+

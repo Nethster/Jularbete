@@ -55,7 +55,8 @@
     max-width: 100%; }
   .light h1 {
     padding-right: 1rem; }
-  .light a:link, .light a:visited {
+  .light a:link,
+  .light a:visited {
     color: #000000; }
   .light .product__image {
     height: 300px;
@@ -241,7 +242,8 @@
     max-width: 100%; }
   .dark h1 {
     padding-right: 1rem; }
-  .dark a:link, .dark a:visited {
+  .dark a:link,
+  .dark a:visited {
     color: #ffffff; }
   .dark .product__image {
     height: 300px;

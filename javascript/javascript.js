@@ -7,35 +7,35 @@ const themeSwitcher = () => {
 
 //setting up local storage for darktheme to follow through several pages
 let darkMode = localStorage.getItem("darkMode");
-
 // toggle for the dark mode
 const toggle = document.querySelector("#chk");
 
-// All selectors and functions for the full effect across all pages by storing it.
+//adds darkmode to localstorage
 const enableDarkMode = () => {
 	document.body.classList.toggle("dark");
 	document.body.classList.add("darkMode");
 	localStorage.setItem("darkMode", "enabled");
 };
 
+//removes darkmode from local storage
 const disableDarkMode = () => {
 	document.body.classList.toggle("dark");
 	document.body.classList.remove("darkMode");
 	localStorage.setItem("darkMode", null);
 };
 
+//looks for darkmode in local storage to enable it if it was enabled on last visit
 if (darkMode === "enabled") {
 	enableDarkMode();
 }
 
+//works the change by activating or deactivating
 toggle.addEventListener("change", () => {
 	darkMode = localStorage.getItem("darkMode");
 
 	if (darkMode !== "enabled") {
 		enableDarkMode();
-		console.log(darkMode);
 	} else {
 		disableDarkMode();
-		console.log(darkMode);
 	}
 });

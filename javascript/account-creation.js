@@ -1,13 +1,13 @@
+//Modal for Login
+
 //get modal element
-
 var modal = document.querySelector("#signUpModal");
-
 //get open modal button
 var modalBtn = document.querySelector("#modalBtn");
-
 // close button
-
 var closeBtn = document.querySelector(".closeBtn");
+
+//modal for F.A.Q
 
 //listen for open click
 modalBtn.addEventListener("click", openModal);
@@ -73,3 +73,10 @@ function saveData() {
 	localStorage.setItem("username", user);
 	localStorage.setItem("password", psw);
 	localStorage.setItem("email", email); */
+
+//get modal element
+var modal = document.querySelector(".faqModal");
+//get open modal button
+var modalBtn = document.querySelector("#faqModalAct");
+// close button
+var closeBtn = document.querySelector(".closeBtn");

@@ -91,8 +91,8 @@ function openModalBtnFAQ() {
 	modalFAQ.style.display = "block";
 }
 
-function clickOutside(e) {
-	if (e.target == modalFAQ) {
+function clickOutside(f) {
+	if (f.target == modalFAQ) {
 		modalFAQ.style.display = "none";
 	}
 }

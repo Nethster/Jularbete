@@ -84,14 +84,14 @@ var modalFAQ = document.querySelector(".modalFAQ");
 modalBtnFAQ.addEventListener("click", openModalBtnFAQ);
 
 //Listen for outside click to close
-window.addEventListener("click", clickOutside);
+window.addEventListener("click", clickOutsideFAQ);
 
 //function to open modal
 function openModalBtnFAQ() {
 	modalFAQ.style.display = "block";
 }
 
-function clickOutside(f) {
+function clickOutsideFAQ(f) {
 	if (f.target == modalFAQ) {
 		modalFAQ.style.display = "none";
 	}

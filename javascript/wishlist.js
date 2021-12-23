@@ -50,6 +50,9 @@ function renderWishlistItem() {
             <div class="unit-price">
                 ${item.price} SEK
             </div>
+            <button class="add-to-cart" title="Add to Shopping Cart" onclick="addToCart(${item.id})">
+            <span class="material-icons">&#xe148;</span>
+            </button>
         </div>
       `;
 

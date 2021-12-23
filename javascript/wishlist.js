@@ -8,25 +8,14 @@ updateWishlist()
 
 
 function addToWishlist(id) {
-
-
-
-console.log(productList)
-   /* 
-    if (wishlist.some((item) => item.id !== id)) {
-
-        
-
-    } else {
-        */
+       
         const item = productList.find((product) => product.id === id);
         console.log(id)
         wishlist.push({
             ...item, 
         });       
-  /*  }*/
-
-    console.log(id)
+   
+    
     updateWishlist()
 } 
 
@@ -57,7 +46,6 @@ function renderWishlistItem() {
       `;
 
     })
-
 }
 
 function removeItemFromWishlist(id) {

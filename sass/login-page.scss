@@ -100,17 +100,16 @@
 
 	.containerFAQ {
 		border: 2px solid black;
-		position: fixed;
-		justify-content: center;
-		align-items: center;
 		background-color: #ffdb58;
 		box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 		animation-name: modalopen;
 		animation-duration: 1s;
 		width: 50rem;
 		height: 35rem;
+		position: absolute;
 		top: 50%;
 		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 
 	//MODAL SIGNUP
@@ -144,6 +143,10 @@
 		box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
 		animation-name: modalopen;
 		animation-duration: 1s;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 
 	.modal-header h2,

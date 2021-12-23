@@ -8,14 +8,17 @@ updateWishlist()
 
 
 function addToWishlist(id) {
-       
+    if (wishlist.some((item) => item.id === id)) {
+
+        
+
+    } else {
         const item = productList.find((product) => product.id === id);
         console.log(id)
         wishlist.push({
             ...item, 
         });       
-   
-    
+    }
     updateWishlist()
 } 
 

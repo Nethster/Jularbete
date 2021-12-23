@@ -1,174 +1,226 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/icon?family=Material+Icons"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="/styles.css" />
-		<title>My account</title>
-	</head>
-	<body>
-		<header>
-			<div class="logo-container">
-				<span class="material-icons">&#xe3e3;</span
-				><a href="index.html" style="text-decoration: none"
-					><h1>Flower Power</h1></a
-				>
-			</div>
-			<nav>
-				<ul>
-					<li>
-						<a href="/admin-page.html" title="Admin"
-							><span class="material-icons">&#xef3d;</span></a
-						>
-					</li>
-					<li>
-						<a href="#" title="Wishlist"
-							><span class="material-icons">&#xe87d;</span></a
-						>
-					</li>
-					<li>
-						<div>
-							<input type="checkbox" class="checkbox" id="chk" />
-							<label class="label" for="chk">
-								<i class="fas fa-moon"></i>
-								<i class="fas fa-sun"></i>
-								<div class="ball"></div>
-							</label>
-						</div>
-					</li>
-				</ul>
-			</nav>
-		</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>My account</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <span class="material-icons">&#xe3e3;</span
+        ><a href="index.html" style="text-decoration: none"
+          ><h1>Flower Power</h1></a
+        >
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="/admin-page.html" title="Admin"
+              ><span class="material-icons">&#xef3d;</span></a
+            >
+          </li>
+          <li>
+            <a href="#" title="Wishlist" onclick="showWishlist()"
+              ><span class="material-icons">&#xe87d;</span></a
+            >
+          </li>
+          <li>
+            <button title="Shopping Cart" class="cart-icon" onclick="show()">
+              <span class="material-icons">&#xe8cc;</span
+              ><span class="item-total">0</span>
+            </button>
+          </li>
+          <li>
+            <div>
+              <input type="checkbox" class="checkbox" id="chk" />
+              <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-		<hr />
-		<!--Horizontal line for separation-->
+    <hr />
+    <!--Horizontal line for separation-->
 
-		<main>
-			<div class="login">
-				<h2>Welcome fellow florist!</h2>
-				<form method="POST">
-					<div class="user-name">
-						<input type="text" required />
-						<label>Username</label>
-					</div>
-					<div class="user-password">
-						<input type="password" required />
-						<label>Password</label>
-					</div>
-					<div class="submit">
-						<input type="submit" value="Login" />
-					</div>
-					<div class="forgot-pass">
-						<a href="#">Forgot password?</a>
-					</div>
-				</form>
-			</div>
-		</main>
-		<hr />
-		<div class="login-footer">
-			<div class="sign-up" id="signUp-Modal">
-				<h2>Not a member?</h2>
-				<h3>Join the flower power comunity today!</h3>
-				<p>
-					Dont miss out on tons of <strong>perks</strong>,<br />
-					such as <strong>discounts</strong>,
-					<strong>personalized</strong> offers and much more!
-				</p>
-			</div>
-			<button id="modalBtn" class="button">Sign up Today</button>
+    <main>
+      <div class="login">
+        <h2>Welcome fellow florist!</h2>
+        <form method="POST">
+          <div class="user-name">
+            <input type="text" required />
+            <label>Username</label>
+          </div>
+          <div class="user-password">
+            <input type="password" required />
+            <label>Password</label>
+          </div>
+          <div class="submit">
+            <input type="submit" value="Login" />
+          </div>
+          <div class="forgot-pass">
+            <a href="#">Forgot password?</a>
+          </div>
+        </form>
+      </div>
+    </main>
+    <hr />
+    <div class="login-footer">
+      <div class="sign-up" id="signUp-Modal">
+        <h2>Not a member?</h2>
+        <h3>Join the flower power comunity today!</h3>
+        <p>
+          Dont miss out on tons of <strong>perks</strong>,<br />
+          such as <strong>discounts</strong>,
+          <strong>personalized</strong> offers and much more!
+        </p>
+      </div>
+      <button id="modalBtn" class="button">Sign up Today</button>
 
-			<div id="signUpModal" class="modal">
-				<div class="modal-content">
-					<div class="modal-header">
-						<span class="closeBtn">&times;</span>
-						<h2>Member Signup</h2>
-					</div>
-					<div class="modal-body">
-						<form>
-							<span>Username</span>
-							<input
-								type="text"
-								name="userID"
-								id="userID"
-								placeholder="Username"
-							/>
-							<span>Password</span>
-							<input type="password" id="passwordID" placeholder="Password" />
-							<span>Email</span>
-							<input
-								type="email"
-								id="emailID"
-								placeholder="ragnarsfisk88@gbg.se"
-							/>
-							<button type="button" onclick="saveData()" class="submitInfo">
-								Submit
-							</button>
-						</form>
-					</div>
-					<div class="modal-footer">
-						<h3>Welcome to Flower Power</h3>
-					</div>
-				</div>
-			</div>
-		</div>
-		<hr />
-		<footer>
-			<h3>Flower Power</h3>
-			<div class="footer-list-wrapper">
-				<ul>
-					<li>Footers are all the rage © Tom</li>
-					<li>Get in touch:</li>
-					<li>Gustavslundsvägen 149</li>
-					<li>Telefon: EJ TELEFON</li>
-				</ul>
-				<ul>
-					<!-- FAQ -->
-					<li><a href="#" id="rollFAQ">F.A.Q</a></li>
-					<!--FAQ Modal-->
-					<div class="modalFAQ">
-						<div class="containerFAQ">
-							<iframe
-								src="https://player.vimeo.com/video/429388049?h=d6ef415a87&autoplay=1"
-								width="640"
-								height="460"
-								frameborder="0"
-								allow="autoplay; fullscreen; picture-in-picture"
-								allowfullscreen
-							></iframe>
-						</div>
-					</div>
-					<!--END of FAQ Modal-->
-					<li><a href="">Got suggestions?</a></li>
-					<li><a href="">Hem</a></li>
-				</ul>
-			</div>
-			<div>
-				<ul class="payment-icons">
-					<li><img src="images/klarna.png" alt="" class="payment-icon" /></li>
-					<li>
-						<img src="images/mastercard.png" alt="" class="payment-icon" />
-					</li>
-					<li><img src="images/visa.png" alt="" class="payment-icon" /></li>
-				</ul>
-			</div>
-		</footer>
-		<script
-			src="https://kit.fontawesome.com/75466a2173.js"
-			crossorigin="anonymous"
-			defer
-		></script>
-		<script src="./javascript/account-creation.js" defer></script>
-		<script src="./javascript/javascript.js"></script>
-	</body>
+      <div id="signUpModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="closeBtn">&times;</span>
+            <h2>Member Signup</h2>
+          </div>
+          <div class="modal-body">
+            <form>
+              <span>Username</span>
+              <input
+                type="text"
+                name="userID"
+                id="userID"
+                placeholder="Username"
+              />
+              <span>Password</span>
+              <input type="password" id="passwordID" placeholder="Password" />
+              <span>Email</span>
+              <input
+                type="email"
+                id="emailID"
+                placeholder="ragnarsfisk88@gbg.se"
+              />
+              <button type="button" onclick="saveData()" class="submitInfo">
+                Submit
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <h3>Welcome to Flower Power</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!--shopping cart-->
+    <section class="cart-overlay">
+      <div class="cart">
+        <button class="close-cart-button" onclick="hide()">
+          <span class="material-icons">&#xe5cd;</span>
+        </button>
+        <h2>Your Cart</h2>
+        <div class="cart-content">
+          <!-- cart items show up here -->
+        </div>
+        <div class="cart-footer">
+          <h3>Total: <span class="cart-total">0</span> SEK</h3>
+          <div class="cart-buttons">
+            <button class="clear-cart-button" onclick="clearTheCart()">
+              Clear Cart
+            </button>
+            <button class="checkout" onclick="showSuccessMessage()">
+              Checkout
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="success-message">
+      <span class="material-icons">&#xef76;</span>
+      <h2>Thanks for Your Purchase!</h2>
+      <button class="close-success-message" onclick="hideSuccessMessage()">
+        Close
+      </button>
+    </div>
+    <!--Wishlist section -->
+    <section class="wishlist-overlay">
+      <div class="wishlist">
+        <button class="close-wishlist-button" onclick="hideWishlist()">
+          <span class="material-icons">&#xe5cd;</span>
+        </button>
+        <h2>Wishlist</h2>
+        <div class="wishlist-content">
+          <!-- wishlist items show up here -->
+        </div>
+      </div>
+    </section>
+    <footer>
+      <h3>Flower Power</h3>
+      <div class="footer-list-wrapper">
+        <ul>
+          <li>Footers are all the rage © Tom</li>
+          <li>Get in touch:</li>
+          <li>Gustavslundsvägen 149</li>
+          <li>Telefon: EJ TELEFON</li>
+        </ul>
+        <ul>
+          <!-- FAQ -->
+          <li><a href="#" id="rollFAQ">F.A.Q</a></li>
+          <!--FAQ Modal-->
+          <div class="modalFAQ">
+            <div class="containerFAQ">
+              <iframe
+                src="https://player.vimeo.com/video/429388049?h=d6ef415a87&autoplay=1"
+                width="640"
+                height="460"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <!--END of FAQ Modal-->
+          <li><a href="">Got suggestions?</a></li>
+          <li><a href="">Hem</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="payment-icons">
+          <li><img src="images/klarna.png" alt="" class="payment-icon" /></li>
+          <li>
+            <img src="images/mastercard.png" alt="" class="payment-icon" />
+          </li>
+          <li><img src="images/visa.png" alt="" class="payment-icon" /></li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/75466a2173.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="./javascript/account-creation.js"></script>
+    <script src="./javascript/javascript.js"></script>
+    <script src="./javascript/wishlist.js"></script>
+    <script src="./javascript/products-database.js"></script>
+    <script src="./javascript/adminPage.js"></script>
+    <script src="./javascript/shopping-cart.js"></script>
+  </body>
 </html>

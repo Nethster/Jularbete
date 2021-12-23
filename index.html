@@ -34,7 +34,7 @@
           </li>
           <li>
             <a href="#" title="Wishlist"
-              ><span class="material-icons">&#xe87d;</span></a
+            onclick="showWishlist()"><span class="material-icons">&#xe87d;</span></a
             >
           </li>
           <li>
@@ -66,77 +66,6 @@
         </p>
         <div class="item__counter">12 items</div>
       </section>
-      <!--<div class="product-list-wrapper">
-        <ul>
-            <li>
-                <img src="images/pot-1.jpg" class="product__image" alt="">
-                <h3>White pot 1</h3>
-                <h4>30 SEK</h4>
-                <button class="add-to-favorites" title="Add to favorites">
-                    <img src="images/favorite_border_black_24dp.svg" alt="">
-                </button>
-                <button class="add-to-cart" title="Add to Shopping Cart">
-                    <span class="material-icons">&#xe148;</span>
-                </button>
-            </li>
-            <li>
-                <img src="images/pot-2.jpg" class="product__image" alt="">
-                <h3>White pot 2</h3>
-                <h4>30 SEK</h4>
-                <button class="add-to-favorites" title="Add to favorites">
-                    <img src="images/favorite_border_black_24dp.svg" alt="">
-                </button>
-                <button class="add-to-cart" title="Add to Shopping Cart">
-                    <span class="material-icons">&#xe148;</span>
-                </button>
-            </li>
-            <li>
-                <img src="images/pot-3.jpg" class="product__image" alt="">
-                <h3>White pot 3</h3>
-                <h4>30 SEK</h4>
-                <button class="add-to-favorites" title="Add to favorites">
-                    <img src="images/favorite_border_black_24dp.svg" alt="">
-                </button>
-                <button class="add-to-cart" title="Add to Shopping Cart">
-                    <span class="material-icons">&#xe148;</span>
-                </button>
-            </li>
-            <li>
-                <img src="images/pot-4.jpg" class="product__image" alt="">
-                <h3>Green pot</h3>
-                <h4>30 SEK</h4>
-                <button class="add-to-favorites" title="Add to favorites">
-                    <img src="images/favorite_border_black_24dp.svg" alt="">
-                </button>
-                <button class="add-to-cart" title="Add to Shopping Cart">
-                    <span class="material-icons">&#xe148;</span>
-                </button>
-            </li>
-            <li>
-                <img src="images/pot-5.jpg" class="product__image" alt="">
-                <h3>Black pot</h3>
-                <h4>30 SEK</h4>
-                <button class="add-to-favorites" title="Add to favorites">
-                    <img src="images/favorite_border_black_24dp.svg" alt="">
-                </button>
-                <button class="add-to-cart" title="Add to Shopping Cart">
-                    <span class="material-icons">&#xe148;</span>
-                </button>
-            </li>
-            <li>
-                <img src="images/pot-6.jpg" class="product__image" alt="">
-                <h3>Gray pot</h3>
-                <h4>30 SEK</h4>
-                <button class="add-to-favorites" title="Add to favorites">
-                    <img src="images/favorite_border_black_24dp.svg" alt="">
-                </button>
-                <button class="add-to-cart" title="Add to Shopping Cart">
-                    <span class="material-icons">&#xe148;</span>
-                </button>
-            </li>
-        </ul>
-    </div>
--->
       <div class="created-products-container">
         <ul>
           <li></li>
@@ -183,6 +112,20 @@
           <h2>Thanks for Your Purchase!</h2>
           <button class="close-success-message" onclick="hideSuccessMessage()">Close</button>
       </div>
+      <!--Wishlist section -->
+      <section class="wishlist-overlay"> 
+        <div class="wishlist">
+          <button class="close-wishlist-button" onclick="hideWishlist()">
+            <span class="material-icons">&#xe5cd;</span>
+          </button>
+          <h2>Wishlist</h2>
+          <div class="wishlist-content">
+            <!-- wishlist items show up here -->
+          </div>
+
+        </div>
+      </section>
+
     </main>
     <hr />
     <footer>
@@ -220,8 +163,8 @@
     ></script>
     <script src="/javascript/adminPage.js" defer></script>
     <script src="/javascript/products-database.js" defer></script>
-    <script src="/wishlist.js"></script>
-    <script src="javascript/shopping-cart.js"></script>
+    <script src="/javascript/wishlist.js"></script>
+    <script src="/javascript/shopping-cart.js"></script>
     <!--the scripts are placed before closing body tag to make sure that the text and images on the page are loaded first-->
   </body>
 </html>

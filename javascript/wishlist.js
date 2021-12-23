@@ -39,7 +39,7 @@ function renderWishlistItem() {
             <div class="unit-price">
                 ${item.price} SEK
             </div>
-            <button class="add-to-cart" title="Add to Shopping Cart" onclick="addToCart(${item.id})">
+            <button class="wishlist-add-to-cart" title="Add to Shopping Cart" onclick="addToCart(${item.id})">
             <span class="material-icons">&#xe148;</span>
             </button>
         </div>
@@ -56,9 +56,14 @@ function removeItemFromWishlist(id) {
 const showWishlist = () => {
     wishlistContent.classList.add("show");
     wishlistOverlay.classList.add("show");
-  }
+}
   
-  const hideWishlist = () => {
+const hideWishlist = () => {
     wishlistContent.classList.remove("show");
     wishlistOverlay.classList.remove("show");
-  }
+}
+
+const clearTheWishlist = () => {
+    wishlist = [];
+    updateWishlist();
+}

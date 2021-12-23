@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
-  <head>
+	<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,8 +33,8 @@
             >
           </li>
           <li>
-            <a href="#" title="Wishlist" onclick="showWishlist()"
-              ><span class="material-icons">&#xe87d;</span></a
+            <a href="#" title="Wishlist"
+            onclick="showWishlist()"><span class="material-icons">&#xe87d;</span></a
             >
           </li>
           <li>
@@ -57,42 +57,42 @@
       </nav>
     </header>
 
-    <hr />
-    <!--Horizontal line for separation-->
+		<hr />
+		<!--Horizontal line for separation-->
 
-    <main>
-      <div class="login">
-        <h2>Welcome fellow florist!</h2>
-        <form method="POST">
-          <div class="user-name">
-            <input type="text" required />
-            <label>Username</label>
-          </div>
-          <div class="user-password">
-            <input type="password" required />
-            <label>Password</label>
-          </div>
-          <div class="submit">
-            <input type="submit" value="Login" />
-          </div>
-          <div class="forgot-pass">
-            <a href="#">Forgot password?</a>
-          </div>
-        </form>
-      </div>
-    </main>
-    <hr />
-    <div class="login-footer">
-      <div class="sign-up" id="signUp-Modal">
-        <h2>Not a member?</h2>
-        <h3>Join the flower power comunity today!</h3>
-        <p>
-          Dont miss out on tons of <strong>perks</strong>,<br />
-          such as <strong>discounts</strong>,
-          <strong>personalized</strong> offers and much more!
-        </p>
-      </div>
-      <button id="modalBtn" class="button">Sign up Today</button>
+		<main>
+			<div class="login">
+				<h2>Welcome fellow florist!</h2>
+				<form method="POST">
+					<div class="user-name">
+						<input type="text" required />
+						<label>Username</label>
+					</div>
+					<div class="user-password">
+						<input type="password" required />
+						<label>Password</label>
+					</div>
+					<div class="submit">
+						<input type="submit" value="Login" />
+					</div>
+					<div class="forgot-pass">
+						<a href="#">Forgot password?</a>
+					</div>
+				</form>
+			</div>
+		</main>
+		<hr />
+		<div class="login-footer">
+			<div class="sign-up" id="signUp-Modal">
+				<h2>Not a member?</h2>
+				<h3>Join the flower power comunity today!</h3>
+				<p>
+					Dont miss out on tons of <strong>perks</strong>,<br />
+					such as <strong>discounts</strong>,
+					<strong>personalized</strong> offers and much more!
+				</p>
+			</div>
+			<button id="modalBtn" class="button">Sign up Today</button>
 
       <div id="signUpModal" class="modal">
         <div class="modal-content">
@@ -129,48 +129,43 @@
       </div>
     </div>
     <hr />
-    <!--shopping cart-->
-    <section class="cart-overlay">
-      <div class="cart">
-        <button class="close-cart-button" onclick="hide()">
-          <span class="material-icons">&#xe5cd;</span>
-        </button>
-        <h2>Your Cart</h2>
-        <div class="cart-content">
-          <!-- cart items show up here -->
-        </div>
-        <div class="cart-footer">
-          <h3>Total: <span class="cart-total">0</span> SEK</h3>
-          <div class="cart-buttons">
-            <button class="clear-cart-button" onclick="clearTheCart()">
-              Clear Cart
-            </button>
-            <button class="checkout" onclick="showSuccessMessage()">
-              Checkout
-            </button>
+          <!--shopping cart-->
+          <section class="cart-overlay">
+            <div class="cart">
+              <button class="close-cart-button" onclick="hide()">
+                <span class="material-icons">&#xe5cd;</span>
+              </button>
+              <h2>Your Cart</h2>
+              <div class="cart-content">
+                <!-- cart items show up here -->
+              </div>
+              <div class="cart-footer">
+                <h3>Total: <span class="cart-total">0</span> SEK</h3>
+                <div class="cart-buttons">
+                  <button class="clear-cart-button" onclick="clearTheCart()">Clear Cart</button>
+                  <button class="checkout" onclick="showSuccessMessage()">Checkout</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="success-message">
+              <span class="material-icons">&#xef76;</span>
+              <h2>Thanks for Your Purchase!</h2>
+              <button class="close-success-message" onclick="hideSuccessMessage()">Close</button>
           </div>
-        </div>
-      </div>
-    </section>
-    <div class="success-message">
-      <span class="material-icons">&#xef76;</span>
-      <h2>Thanks for Your Purchase!</h2>
-      <button class="close-success-message" onclick="hideSuccessMessage()">
-        Close
-      </button>
-    </div>
-    <!--Wishlist section -->
-    <section class="wishlist-overlay">
-      <div class="wishlist">
-        <button class="close-wishlist-button" onclick="hideWishlist()">
-          <span class="material-icons">&#xe5cd;</span>
-        </button>
-        <h2>Wishlist</h2>
-        <div class="wishlist-content">
-          <!-- wishlist items show up here -->
-        </div>
-      </div>
-    </section>
+          <!--Wishlist section -->
+          <section class="wishlist-overlay"> 
+			<div class="wishlist">
+			  <button class="close-wishlist-button" onclick="hideWishlist()">
+				<span class="material-icons">&#xe5cd;</span>
+			  </button>
+			  <h2>Wishlist</h2>
+			  <div class="wishlist-content">
+				<!-- wishlist items show up here -->
+			  </div>
+			  <button class="clear-wishlist-button" onclick="clearTheWishlist()">Clear Wishlist</button>
+			</div>
+		  </section>
     <footer>
       <h3>Flower Power</h3>
       <div class="footer-list-wrapper">
@@ -182,21 +177,21 @@
         </ul>
         <ul>
           <!-- FAQ -->
-          <li><a href="#" id="rollFAQ">F.A.Q</a></li>
-          <!--FAQ Modal-->
-          <div class="modalFAQ">
-            <div class="containerFAQ">
-              <iframe
-                src="https://player.vimeo.com/video/429388049?h=d6ef415a87&autoplay=1"
-                width="640"
-                height="460"
-                frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
-          <!--END of FAQ Modal-->
+					<li><a href="#" id="rollFAQ">F.A.Q</a></li>
+					<!--FAQ Modal-->
+					<div class="modalFAQ">
+						<div class="containerFAQ">
+							<iframe
+								src="https://player.vimeo.com/video/429388049?h=d6ef415a87&autoplay=1"
+								width="640"
+								height="460"
+								frameborder="0"
+								allow="autoplay; fullscreen; picture-in-picture"
+								allowfullscreen
+							></iframe>
+						</div>
+					</div>
+					<!--END of FAQ Modal-->
           <li><a href="">Got suggestions?</a></li>
           <li><a href="">Hem</a></li>
         </ul>
@@ -218,8 +213,8 @@
     ></script>
     <script src="./javascript/account-creation.js"></script>
     <script src="./javascript/javascript.js"></script>
-    <script src="./javascript/wishlist.js"></script>
-    <script src="./javascript/products-database.js"></script>
+    <script src="./javascript/wishlist.js"></script> 
+    <script src="./javascript/products-database.js"></script> 
     <script src="./javascript/adminPage.js"></script>
     <script src="./javascript/shopping-cart.js"></script>
   </body>

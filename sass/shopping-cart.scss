@@ -168,7 +168,16 @@
     font-family: "Roboto Mono", monospace;
     padding: 0.5rem;
   }
+/* Hide scrollbar for Chrome, Safari and Opera */
+  .cart::-webkit-scrollbar {
+    display: none;
+  }
 
+/* Hide scrollbar for IE, Edge and Firefox */
+  .cart {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+  }
   @media (max-width: 500px) {
     .item-total {
       display: none;

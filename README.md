@@ -1,6 +1,6 @@
 <div align="center"><img src="https://medieinstitutet.se/wp-content/uploads/2019/04/logomedieinstitutet-370x73.png"></div>
 <h1 align="center">Julprojekt</h1>
-<p align="center"><strong>E-commerce website developed with SCSS and JavaScript</strong>
+<p align="center"><strong>E-commerce website developed with SCSS, JS and Open Source APIs</strong>
 <br>Gruppinlämning Front-end 50yhp</p>
 <br/>
 <h2>About</h2>

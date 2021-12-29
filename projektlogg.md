@@ -55,7 +55,7 @@ Vi börjar titta på nya features men börjar även kolla på saker som vi kansk
 <h1>Sprint 4 </h1>
 
 <p>
-Scrum Master - Kommunist Grupp 5
+Scrum Master - Kommunist-Grupp 5
 
 20:e december.
 Firar att alla klarade av provet.

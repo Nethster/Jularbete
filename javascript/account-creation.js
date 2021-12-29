@@ -79,6 +79,8 @@ var modalBtnFAQ = document.querySelector("#rollFAQ");
 
 //get modal element
 var modalFAQ = document.querySelector(".modalFAQ");
+//get FAQ video
+var video = document.querySelector(".FAQvid");
 
 //listen for open click
 modalBtnFAQ.addEventListener("click", openModalBtnFAQ);

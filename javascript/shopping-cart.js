@@ -9,6 +9,7 @@ const clearCartButton = document.querySelector(".clear-cart-button");
 const itemTotals = document.querySelector(".item-total");
 const cartFooter = document.querySelector(".cart-footer");
 const successMessage = document.querySelector(".success-message");
+const checkoutButton = document.querySelector(".checkout");
 
 // Creating an empty cart array
 let cart = JSON.parse(localStorage.getItem("CART")) || [];
@@ -129,4 +130,14 @@ const showSuccessMessage = () => {
 
 const hideSuccessMessage = () => {
   successMessage.classList.remove("show");
+}
+
+// Disabling the checkout button if the shopping cart is empty
+
+const disableCheckout = () => {
+  if (cart == []){
+    checkoutButton.disabled = true;
+  } else {
+    checkoutButton.disabled = false;
+  }
 }

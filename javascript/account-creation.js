@@ -73,7 +73,7 @@ function saveData() {
 	localStorage.setItem("email", email); */
 
 //FAQ modal
-
+var vid = document.getElementById("vid"); 
 //get open modal button
 var modalBtnFAQ = document.querySelector("#rollFAQ");
 
@@ -91,10 +91,18 @@ window.addEventListener("click", clickOutsideFAQ);
 //function to open modal
 function openModalBtnFAQ() {
 	modalFAQ.style.display = "block";
+	playVid()
 }
 
 function clickOutsideFAQ(f) {
 	if (f.target == modalFAQ) {
 		modalFAQ.style.display = "none";
+		vid.src ="";
 	}
+	
 }
+
+
+function playVid() {
+	vid.src = "https://player.vimeo.com/video/429388049?h=d6ef415a87&autoplay=1"; 
+} 
